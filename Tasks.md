@@ -30,11 +30,11 @@ This document tracks all development tasks for the FSCompliance project, organiz
 - ✅ Implement basic health check and status endpoints (2024-12-25)
 
 ### Core Data Models
-- ⏳ Design and implement ConductRequirement Pydantic model
-- ⏳ Design and implement ComplianceQuery Pydantic model
-- ⏳ Design and implement ComplianceResponse Pydantic model
-- ⏳ Create base models for extensibility to other regulatory frameworks
-- ⏳ Add data validation and serialization tests
+- ✅ Design and implement ConductRequirement Pydantic model (2024-12-25)
+- ✅ Design and implement ComplianceQuery Pydantic model (2024-12-25)
+- ✅ Design and implement ComplianceResponse Pydantic model (2024-12-25)
+- ✅ Create base models for extensibility to other regulatory frameworks (2024-12-25)
+- ✅ Add data validation and serialization tests (2024-12-25)
 
 ### FCA Handbook Integration
 - ⏳ Research FCA Handbook API or scraping requirements
