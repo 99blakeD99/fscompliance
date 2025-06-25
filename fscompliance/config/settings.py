@@ -8,7 +8,8 @@ including environment variables, defaults, and validation.
 from functools import lru_cache
 from typing import Optional
 
-from pydantic import BaseSettings, Field
+from pydantic import BaseModel, Field
+from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
