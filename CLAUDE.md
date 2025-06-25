@@ -1,0 +1,93 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project Overview
+
+**FSCompliance** is an open-source MCP (Model Context Protocol) service for financial services companies to manage compliance with regulatory "Conduct Requirements". Initially focused on the FCA Handbook with architecture to support additional regulatory frameworks.
+
+## Key Project Files
+
+- **`Planning.md`**: Complete project architecture, goals, technical specifications, and development roadmap
+- **`Rules.md`**: Development guidelines, coding standards, and project-specific conventions
+- **`Tasks.md`**: Current and completed development tasks (to be created)
+
+## Development Commands
+
+### Setup
+```bash
+# Install Poetry (dependency management)
+curl -sSL https://install.python-poetry.org | python3 -
+
+# Install dependencies
+poetry install
+
+# Activate virtual environment
+poetry shell
+```
+
+### Development
+```bash
+# Format code
+poetry run black .
+
+# Lint code
+poetry run ruff check .
+
+# Run tests
+poetry run pytest
+
+# Run with coverage
+poetry run pytest --cov=fscompliance
+```
+
+### MCP Server
+```bash
+# Start MCP server
+poetry run python -m fscompliance.server
+
+# Test MCP server
+poetry run python -m fscompliance.test_client
+```
+
+## Architecture
+
+FSCompliance follows a layered architecture:
+
+1. **MCP Server Layer**: Protocol-compliant JSON-RPC 2.0 server
+2. **Knowledge Management Layer**: LightRAG-powered FCA Handbook processing
+3. **Compliance Intelligence Layer**: AI-powered requirement analysis and gap detection
+4. **Memory and Learning Layer**: Long-term memory with privacy controls
+5. **LLM Abstraction Layer**: Multi-model support (LLaMA 3, Falcon, Mistral Medium)
+
+### Key Technologies
+- **Python 3.11+** with Poetry for dependency management
+- **Pydantic v2** for data validation and serialization
+- **LightRAG** for knowledge retrieval and graph processing
+- **FastAPI** for web framework and MCP server implementation
+- **OAuth 2.1** for authentication and security
+
+## Development Guidelines
+
+**Always consult `Rules.md` before starting development work.** Key principles:
+
+- Follow layered architecture from `Planning.md`
+- Maintain MCP protocol compliance
+- Create comprehensive Pytest unit tests
+- Never exceed 500 lines per file
+- Include regulatory source citations in compliance logic
+- Implement privacy controls for all memory features
+- Validate all inputs, especially financial/customer data
+
+## Target Users
+
+- Compliance Officers
+- Risk Managers  
+- Regulatory Inspectors
+- Professional Advisers
+
+## Use Cases
+
+1. **Compliance Gap Analysis**: Identify salient requirements and flag gaps in policies
+2. **Customer Risk Assessment**: Validate customer scenarios against FCA requirements
+3. **Regulatory Reporting**: Generate draft reports for regulatory inspections
