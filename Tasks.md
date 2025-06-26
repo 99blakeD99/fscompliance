@@ -14,41 +14,41 @@ This document tracks all development tasks for the FSCompliance project, organiz
 ## Phase 1: Foundation (Weeks 1-4)
 
 ### Project Setup & Structure
-- ✅ Create project planning documentation (2024-12-25)
-- ✅ Define development rules and guidelines (2024-12-25)
-- ✅ Update CLAUDE.md with project context (2024-12-25)
-- ✅ Set up GitHub repository with proper structure (2024-12-25)
-- ✅ Initialize Python project with Poetry (2024-12-25)
-- ✅ Configure development environment (pre-commit hooks, CI/CD) (2024-12-25)
-- ✅ Create initial directory structure following layered architecture (2024-12-25)
+- ✅ Create project planning documentation (2025-06-26)
+- ✅ Define development rules and guidelines (2025-06-26)
+- ✅ Update CLAUDE.md with project context (2025-06-26)
+- ✅ Set up GitHub repository with proper structure (2025-06-26)
+- ✅ Initialize Python project with Poetry (2025-06-26)
+- ✅ Configure development environment (pre-commit hooks, CI/CD) (2025-06-26)
+- ✅ Create initial directory structure following layered architecture (2025-06-26)
 
 ### MCP Server Framework
-- ✅ Research and select MCP Python SDK/framework (2024-12-25)
-- ✅ Implement basic MCP server structure (2024-12-25)
-- ✅ Add JSON-RPC 2.0 protocol handling (2024-12-25)
-- ✅ Create MCP server configuration system (2024-12-25)
-- ✅ Implement basic health check and status endpoints (2024-12-25)
+- ✅ Research and select MCP Python SDK/framework (2025-06-26)
+- ✅ Implement basic MCP server structure (2025-06-26)
+- ✅ Add JSON-RPC 2.0 protocol handling (2025-06-26)
+- ✅ Create MCP server configuration system (2025-06-26)
+- ✅ Implement basic health check and status endpoints (2025-06-26)
 
 ### Core Data Models
-- ✅ Design and implement ConductRequirement Pydantic model (2024-12-25)
-- ✅ Design and implement ComplianceQuery Pydantic model (2024-12-25)
-- ✅ Design and implement ComplianceResponse Pydantic model (2024-12-25)
-- ✅ Create base models for extensibility to other regulatory frameworks (2024-12-25)
-- ✅ Add data validation and serialization tests (2024-12-25)
+- ✅ Design and implement ConductRequirement Pydantic model (2025-06-26)
+- ✅ Design and implement ComplianceQuery Pydantic model (2025-06-26)
+- ✅ Design and implement ComplianceResponse Pydantic model (2025-06-26)
+- ✅ Create base models for extensibility to other regulatory frameworks (2025-06-26)
+- ✅ Add data validation and serialization tests (2025-06-26)
 
 ### FCA Handbook Integration
-- ✅ Research FCA Handbook API or scraping requirements (2024-12-25)
-- ✅ Design FCA Handbook data ingestion pipeline (2024-12-25)
-- ✅ Implement document parsing and text extraction (2024-12-25)
-- ✅ Create requirement categorization system (2024-12-25)
-- ✅ Build initial knowledge base structure (2024-12-25)
+- ✅ Research FCA Handbook API or scraping requirements (2025-06-26)
+- ✅ Design FCA Handbook data ingestion pipeline (2025-06-26)
+- ✅ Implement document parsing and text extraction (2025-06-26)
+- ✅ Create requirement categorization system (2025-06-26)
+- ✅ Build initial knowledge base structure (2025-06-26)
 
 ### LightRAG Setup
-- ✅ Install and configure LightRAG (2024-12-25)
-- ✅ Design knowledge graph schema for regulatory requirements (2024-12-25)
-- ✅ Implement document processing pipeline (2024-12-25)
-- ✅ Create entity extraction for regulatory content (2024-12-25)
-- ✅ Set up dual-level retrieval system (low/high level) (2024-12-25)
+- ✅ Install and configure LightRAG (2025-06-26)
+- ✅ Design knowledge graph schema for regulatory requirements (2025-06-26)
+- ✅ Implement document processing pipeline (2025-06-26)
+- ✅ Create entity extraction for regulatory content (2025-06-26)
+- ✅ Set up dual-level retrieval system (low/high level) (2025-06-26)
 
 ---
 
@@ -74,6 +74,14 @@ This document tracks all development tasks for the FSCompliance project, organiz
 - ⏳ Add support for Falcon and Mistral Medium
 - ⏳ Create cost-based model selection logic
 - ⏳ Build LLM response caching system
+
+### LightRAG Integration Completion
+- ⏳ Complete LightRAG storage configuration (vector, graph, key-value backends)
+- ⏳ Replace placeholder LLM functions with real LLM abstraction layer integration
+- ⏳ Replace placeholder embedding functions with real embedding implementations
+- ⏳ Implement explicit graph traversal methods for relationship-based queries
+- ⏳ Add vector + graph hybrid search capabilities testing
+- ⏳ Integrate LightRAG with knowledge base dual-level retrieval system
 
 ### Basic Web Interface
 - ⏳ Create FastAPI application structure
@@ -119,6 +127,7 @@ This document tracks all development tasks for the FSCompliance project, organiz
 ## Phase 4: Integration & Testing (Weeks 13-16)
 
 ### Microsoft Copilot Studio Integration
+- ⏳ Create comprehensive MCP manifest JSON with finalized tool schemas
 - ⏳ Research Copilot Studio integration requirements
 - ⏳ Implement Copilot Studio connector
 - ⏳ Create integration testing suite
