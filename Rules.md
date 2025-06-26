@@ -32,6 +32,18 @@ This document establishes development guidelines and conventions for the FSCompl
 - **Mark completed tasks in `TASK.md`** immediately after finishing them.
 - Add new sub-tasks or TODOs discovered during development to `TASK.md` under a "Discovered During Work" section.
 
+## 📝 Git Commit Guidelines
+
+- **Use co-authorship for all commits**: When committing to GitHub, always use Co-authors: BD and Claude Code in the commit message.
+- **Follow this commit message format**:
+  ```
+  Brief descriptive title
+  
+  Detailed description of changes...
+  
+  Co-authors: BD and Claude Code
+  ```
+
 ## 📎 Style & Conventions
 
 - **Use Python** as the primary language.
