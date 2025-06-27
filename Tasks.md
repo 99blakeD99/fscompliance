@@ -75,7 +75,18 @@ This document tracks all development tasks for the FSCompliance project, organiz
 - ✅ Create cost-based model selection logic (2025-06-26)
 - ✅ Build LLM response caching system (2025-06-26)
 
-### LightRAG Integration Completion
+---
+
+## Phase 3: Integration & Orchestration (Weeks 9-12)
+
+### MCP Server Integration & Pipeline
+- ⏳ Connect LLM Abstraction Layer to MCP server endpoints
+- ⏳ Implement MCP tool definitions for compliance analysis
+- ⏳ Build end-to-end pipeline orchestration (Query → Processing → Intelligence → LLM → Response)
+- ⏳ Add request/response mapping between MCP protocol and internal APIs
+- ⏳ Create request tracking and correlation IDs
+
+### Knowledge Base Integration
 - ⏳ Complete LightRAG storage configuration (vector, graph, key-value backends)
 - ⏳ Replace placeholder LLM functions with real LLM abstraction layer integration
 - ⏳ Replace placeholder embedding functions with real embedding implementations
@@ -83,16 +94,13 @@ This document tracks all development tasks for the FSCompliance project, organiz
 - ⏳ Add vector + graph hybrid search capabilities testing
 - ⏳ Integrate LightRAG with knowledge base dual-level retrieval system
 
-### Basic Web Interface
+### FastAPI Web Interface
 - ⏳ Create FastAPI application structure
-- ⏳ Implement basic compliance query API endpoints
+- ⏳ Implement basic compliance query API endpoints (/analyze, /gap-detection, /requirements)
+- ⏳ Add MCP protocol compliance endpoints (/tools, /call)
+- ⏳ Create API documentation with OpenAPI/Swagger
+- ⏳ Implement authentication and authorization middleware
 - ⏳ Add simple web UI for testing
-- ⏳ Create API documentation with OpenAPI
-- ⏳ Implement basic error handling and logging
-
----
-
-## Phase 3: Advanced Features (Weeks 9-12)
 
 ### Long-term Memory System
 - ⏳ Design memory storage architecture
@@ -124,7 +132,7 @@ This document tracks all development tasks for the FSCompliance project, organiz
 
 ---
 
-## Phase 4: Integration & Testing (Weeks 13-16)
+## Phase 4: Testing & Deployment (Weeks 13-16)
 
 ### Microsoft Copilot Studio Integration
 - ⏳ Create comprehensive MCP manifest JSON with finalized tool schemas
@@ -154,6 +162,28 @@ This document tracks all development tasks for the FSCompliance project, organiz
 - ⏳ Implement community feedback collection
 - ⏳ Build demo environment for testing
 - ⏳ Prepare initial release and documentation
+
+---
+
+## Miscellaneous Tasks
+
+*Tasks that don't fit into specific development phases but are important for project success.*
+
+### Documentation & User Experience
+- ✅ Create comprehensive FAQ document addressing user concerns and adoption questions (2025-06-27)
+  - Effort: Medium
+  - Notes: Comprehensive 16-question FAQ covering AI integration, business decisions, security, architecture, data quality, and future roadmap
+
+### Community & Open Source
+- ⏳ Create GitHub issue templates for bug reports and feature requests
+- ⏳ Develop contributor onboarding guide
+- ⏳ Set up automated code quality checks (GitHub Actions)
+- ⏳ Create demo environment for public testing
+
+### Business & Strategy
+- ⏳ Develop monetization strategy documentation
+- ⏳ Create competitive analysis document
+- ⏳ Build partnership strategy for regulatory frameworks beyond FCA
 
 ---
 
