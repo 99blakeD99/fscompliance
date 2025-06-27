@@ -1,5 +1,7 @@
 # FSCompliance Frequently Asked Questions (FAQ)
 
+> **📝 Note:** Drafting of FAQ.md in progress - not all tools and features described below are available yet. For current state of project development, please check [Tasks.md](Tasks.md). Many answers below represent planned functionality and architectural design rather than current implementation.
+
 This document addresses common questions about the FSCompliance MCP (Model Context Protocol) server for financial regulatory compliance.
 
 ---
