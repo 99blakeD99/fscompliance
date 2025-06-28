@@ -11,7 +11,7 @@ This document tracks all development tasks for the FSCompliance project, organiz
 
 ---
 
-## Phase 1: Foundation (Weeks 1-4)
+## Phase 1: Foundation
 
 ### Project Setup & Structure
 - ✅ Create project planning documentation (2025-06-26)
@@ -52,7 +52,7 @@ This document tracks all development tasks for the FSCompliance project, organiz
 
 ---
 
-## Phase 2: Core Intelligence (Weeks 5-8)
+## Phase 2: Core Intelligence
 
 ### Compliance Analysis Engine
 - ✅ Implement requirement extraction algorithms (2025-06-26)
@@ -77,7 +77,7 @@ This document tracks all development tasks for the FSCompliance project, organiz
 
 ---
 
-## Phase 3: Integration & Orchestration (Weeks 9-12)
+## Phase 3: Integration & Orchestration
 
 ### MCP Server Integration & Pipeline
 - ⏳ Connect LLM Abstraction Layer to MCP server endpoints
@@ -123,6 +123,15 @@ This document tracks all development tasks for the FSCompliance project, organiz
 - ⏳ Add compliance report generation
 - ⏳ Build regulatory cross-reference system
 
+### AI Safety & Guardrails System
+- ⏳ Create comprehensive GuardRails.md document (input/output guardrails, industry best practices)
+- ⏳ Design input guardrails system (PII filtering, query validation, rate limiting, authorization)
+- ⏳ Design output guardrails system (confidence thresholds, disclaimers, human review flags, audit trails)
+- ⏳ Implement input validation and filtering pipeline
+- ⏳ Implement output validation and safety checks
+- ⏳ Create guardrails monitoring and alerting system
+- ⏳ Add guardrails testing and validation suite
+
 ### Performance Optimization
 - ⏳ Implement response caching strategies
 - ⏳ Add database query optimization
@@ -130,9 +139,13 @@ This document tracks all development tasks for the FSCompliance project, organiz
 - ⏳ Build system monitoring and metrics
 - ⏳ Implement horizontal scaling support
 
+### Phase 3 Completion
+- ⏳ Check FAQ.md against completed Phase 3 implementation status
+- ⏳ Update documentation to reflect Phase 3 capabilities
+
 ---
 
-## Phase 4: Testing & Deployment (Weeks 13-16)
+## Phase 4: Testing & Deployment
 
 ### Microsoft Copilot Studio Integration
 - ⏳ Create comprehensive MCP manifest JSON with finalized tool schemas
@@ -156,12 +169,22 @@ This document tracks all development tasks for the FSCompliance project, organiz
 - ⏳ Create development contribution guidelines
 - ⏳ Add troubleshooting and FAQ documentation
 
+### Demo Preparation
+- ⏳ Prepare to launch demo version
+- ⏳ Check all .md files to ensure correctness, consistency, gaps and glitches
+- ⏳ Verify all FAQ claims against actual implementation status
+- ⏳ Create demo environment setup documentation
+
 ### Community & Feedback
 - ⏳ Set up GitHub repository with proper templates
 - ⏳ Create issue and pull request templates
 - ⏳ Implement community feedback collection
 - ⏳ Build demo environment for testing
 - ⏳ Prepare initial release and documentation
+
+### Phase 4 Completion
+- ⏳ Check FAQ.md against completed Phase 4 implementation status
+- ⏳ Final documentation review and accuracy verification
 
 ---
 
@@ -173,6 +196,13 @@ This document tracks all development tasks for the FSCompliance project, organiz
 - ✅ Create comprehensive FAQ document addressing user concerns and adoption questions (2025-06-27)
   - Effort: Medium
   - Notes: Comprehensive 16-question FAQ covering AI integration, business decisions, security, architecture, data quality, and future roadmap
+- ⏳ Review and update FAQ.md with additional sections and clarifications
+  - Add demo hosting technical requirements explanation
+  - Add memory approach comparison (custom vs MCP-Mem0/OpenMemory)
+  - Add Human in the Loop requirements and responsibility disclaimers
+  - Add GuardRails.md reference and AI safety measures explanation
+  - Add Claude Code development process (Rules.md usage)
+  - Review existing content and add "(To be organised in due course)" notes where manual coordination required
 
 ### Community & Open Source
 - ⏳ Create GitHub issue templates for bug reports and feature requests

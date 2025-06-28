@@ -154,14 +154,14 @@ Each tool includes detailed schemas, example usage, and response formats in the 
 
 **🏆 Recommended for Production:**
 
-**1. Mistral Medium (Mixtral 8x7B) - Best Overall**
+**1. Mistral 7B - Best Overall**
 - ✅ Excellent reasoning for complex regulatory analysis
 - ✅ Strong multilingual support (English, French, German, Spanish)
 - ✅ Good balance of cost and performance
 - ✅ Handles long regulatory documents well
 - 💰 Cost: ~$0.007 per 1K tokens
 
-**2. LLaMA 3 (70B) - Best for Self-Hosted**
+**2. Llama 3 (70B) - Best for Self-Hosted**
 - ✅ Highest accuracy for complex compliance analysis
 - ✅ No usage costs (self-hosted)
 - ✅ Full data privacy and control
@@ -173,15 +173,15 @@ Each tool includes detailed schemas, example usage, and response formats in the 
 - ✅ Excellent safety and reliability
 - ✅ Strong performance on financial regulations
 - ✅ Fast response times
-- 💰 Cost: ~$0.003 per 1K input tokens, ~$0.015 per 1K output tokens
+- 💰 Cost: Variable (check current API pricing)
 
 **📊 Performance Comparison:**
 
 | Model | Accuracy | Speed | Cost | Compliance Analysis | Regulatory Reasoning |
 |-------|----------|-------|------|-------------------|-------------------|
-| **Claude 3.5 Sonnet** | 95% | Fast | High | Excellent | Excellent |
-| **Mistral Medium** | 92% | Fast | Medium | Very Good | Very Good |
-| **LLaMA 3 (70B)** | 93% | Medium | Free* | Excellent | Excellent |
+| **Claude 3.5 Sonnet** | High | Fast | High | Excellent | Excellent |
+| **Mistral 7B** | High | Fast | Medium | Very Good | Very Good |
+| **Llama 3 (70B)** | High | Medium | Free* | Excellent | Excellent |
 | **GPT-4** | 94% | Medium | High | Very Good | Very Good |
 | **Falcon 40B** | 89% | Medium | Low | Good | Good |
 
@@ -196,9 +196,9 @@ FSCompliance automatically chooses the optimal model based on:
 - **Data Sensitivity** - Routes sensitive data to local models
 
 **🎯 Quick Recommendations:**
-- **Getting Started**: Mistral Medium (good balance)
+- **Getting Started**: Mistral 7B (good balance)
 - **Maximum Accuracy**: Claude 3.5 Sonnet
-- **Cost Optimization**: LLaMA 3 (self-hosted)
+- **Cost Optimization**: Llama 3 (self-hosted)
 - **Enterprise Deployment**: Hybrid approach using multiple models
 
 ---
@@ -258,6 +258,39 @@ FSCompliance automatically chooses the optimal model based on:
 - **Air-Gapped Deployment** - Supports completely offline operation
 - **Internal Audit** - Use your existing security and audit procedures
 
+### Q: What AI safety guardrails does FSCompliance implement?
+
+**A:** FSCompliance implements comprehensive AI safety measures documented in our GuardRails.md framework:
+
+**🛡️ Input Guardrails:**
+- **PII Detection & Filtering** - Automatic detection and protection of personal information
+- **Query Validation** - Comprehensive validation of user inputs and requests
+- **Rate Limiting** - Protection against abuse and denial-of-service attacks
+- **Authorization Checks** - Verification of user permissions for sensitive operations
+- **Content Safety** - Filtering of inappropriate or potentially harmful content
+
+**🔍 Output Guardrails:**
+- **Confidence Thresholds** - Automatic flagging of low-confidence responses for review
+- **Disclaimer Injection** - Automatic inclusion of appropriate legal and professional disclaimers
+- **Human Review Flags** - Escalation of high-stakes decisions to human experts
+- **Audit Trail Generation** - Complete logging of AI decisions and reasoning
+- **Bias Detection** - Monitoring for potential bias in compliance recommendations
+
+**📋 Compliance Guardrails:**
+- **Regulatory Accuracy** - Multi-layer validation against authoritative regulatory sources
+- **Professional Standards** - Adherence to financial services professional standards
+- **Data Privacy** - Strict controls for handling sensitive financial and personal data
+- **Risk Assessment** - Automatic assessment of recommendation risk levels
+
+**🔄 Continuous Monitoring:**
+- **Real-Time Monitoring** - Continuous monitoring of AI outputs for quality and safety
+- **Escalation Procedures** - Automatic escalation of concerning outputs to human reviewers
+- **Performance Tracking** - Ongoing measurement of guardrail effectiveness
+- **Regular Updates** - Continuous improvement based on new risks and regulatory requirements
+
+**📖 Full Documentation:**
+For complete details on our AI safety framework, see GuardRails.md *(to be created)* which will provide comprehensive documentation of all safety measures, implementation details, and compliance procedures.
+
 ### Q: What tests have been carried out to ensure the FSCompliance MCP Server's software integrity?
 
 **A:** FSCompliance follows rigorous testing practices to ensure reliability and correctness:
@@ -293,7 +326,7 @@ FSCompliance automatically chooses the optimal model based on:
 **Regulatory Accuracy Tests**
 - Validation against known FCA requirements and interpretations
 - Cross-reference testing with official FCA guidance
-- Expert review of compliance analysis outputs
+- Expert review of compliance analysis outputs *(To be organised in due course)*
 - Regression testing to prevent accuracy degradation
 
 **Data Quality Tests**
@@ -326,7 +359,7 @@ FSCompliance automatically chooses the optimal model based on:
 - Comprehensive regression testing before releases
 - Canary deployments for gradual rollout
 - Rollback procedures for failed deployments
-- User acceptance testing with financial industry experts
+- User acceptance testing with financial industry experts *(To be organised in due course)*
 
 **📊 Quality Metrics & Monitoring:**
 
@@ -344,10 +377,10 @@ FSCompliance automatically chooses the optimal model based on:
 
 **🏆 Third-Party Validation:**
 
-- **Financial Industry Expert Review** - Compliance professionals validate outputs
-- **Academic Partnerships** - Research collaboration for methodology validation
+- **Financial Industry Expert Review** - Compliance professionals validate outputs *(To be organised in due course)*
+- **Academic Partnerships** - Research collaboration for methodology validation *(To be organised in due course)*
 - **Peer Review** - Open source community review and contributions
-- **Regulatory Feedback** - Engagement with regulatory bodies for guidance
+- **Regulatory Feedback** - Engagement with regulatory bodies for guidance *(To be organised in due course)*
 
 ---
 
@@ -502,6 +535,33 @@ FSCompliance automatically chooses the optimal model based on:
 
 **🚀 Ongoing Role:**
 Claude Code continues as the primary development partner for Phase 3 and beyond, bringing consistency, deep system knowledge, and maintained code quality standards.
+
+### Q: How does Claude Code maintain consistency when working on FSCompliance?
+
+**A:** Claude Code follows documented development guidelines to ensure consistent, high-quality contributions:
+
+**📋 Development Guidelines:**
+
+**Rules.md Adherence**
+- **Coding Standards** - Follows project-specific coding conventions and style guidelines
+- **Architecture Compliance** - Maintains consistency with established layered architecture
+- **Quality Requirements** - Adheres to comprehensive testing and documentation standards
+- **Security Practices** - Implements security best practices for financial compliance software
+
+**Consistency Mechanisms**
+- **Development Rules** - Clear guidelines in Rules.md for all development decisions
+- **Pattern Following** - Consistent application of established code patterns and structures
+- **Review Standards** - Systematic approach to code quality and architectural compliance
+- **Documentation Requirements** - Comprehensive documentation for all new components
+
+**Quality Assurance**
+- **Automated Testing** - Maintains comprehensive test coverage for all new functionality
+- **Code Standards** - Consistent formatting, typing, and documentation across the codebase
+- **Performance Standards** - Ensures all implementations meet performance and scalability requirements
+- **Regulatory Compliance** - Maintains awareness of financial services compliance requirements
+
+**📖 Process Documentation:**
+All development guidelines, coding standards, and architectural decisions are documented in [Rules.md](Rules.md), ensuring consistent development practices and maintainable code quality throughout the project lifecycle.
 
 ### Q: Can the FSCompliance MCP Server work with a self-hosted LLM?
 
@@ -735,10 +795,10 @@ Start with cloud APIs for development and testing, then move to self-hosted for 
 - **Multi-Requirement Scenarios** - Complex cases involving multiple regulatory requirements
 
 **Expert-Validated Responses**
-- **Compliance Professional Review** - Responses validated by certified compliance officers
-- **Legal Expert Validation** - Complex interpretations reviewed by regulatory lawyers
-- **Industry Practitioner Input** - Real-world validation from financial services professionals
-- **Academic Collaboration** - Research partnerships with regulatory compliance programs
+- **Compliance Professional Review** - Responses validated by certified compliance officers *(To be organised in due course)*
+- **Legal Expert Validation** - Complex interpretations reviewed by regulatory lawyers *(To be organised in due course)*
+- **Industry Practitioner Input** - Real-world validation from financial services professionals *(To be organised in due course)*
+- **Academic Collaboration** - Research partnerships with regulatory compliance programs *(To be organised in due course)*
 
 **Benchmark Comparisons**
 - **Commercial Tool Comparison** - Accuracy compared against established compliance software
@@ -1001,6 +1061,50 @@ Sensitive Business Data → Local processing only
 - **Training Enhancement** - Improving compliance training based on common questions and issues
 - **Decision Consistency** - Ensuring consistent compliance decisions across the organization
 
+### Q: Why does FSCompliance use a custom memory approach instead of existing MCP memory solutions like MCP-Mem0?
+
+**A:** FSCompliance implements specialized memory designed specifically for financial compliance requirements:
+
+**🏦 Financial Services Requirements:**
+
+**Regulatory-Specific Memory**
+- **Compliance Context** - Memory designed to understand regulatory relationships and compliance patterns
+- **Privacy Controls** - Built-in GDPR compliance and data anonymization for financial data
+- **Audit Trails** - Complete tracking required for financial services compliance
+- **Retention Policies** - Sophisticated policies for different types of regulatory information
+
+**Integration Benefits**
+- **LightRAG Integration** - Seamless integration with knowledge graph for contextual memory
+- **Domain Specialization** - Optimized for financial regulatory learning patterns
+- **Risk Awareness** - Understanding of risk levels and appropriate memory retention
+- **Compliance Workflows** - Memory designed around compliance analysis workflows
+
+**🔄 Generic MCP Memory Comparison:**
+
+**MCP-Mem0/OpenMemory Advantages**
+- **Mature Solutions** - Proven, tested memory implementations
+- **Broad Compatibility** - Designed for general MCP use cases
+- **Community Support** - Wider user base and community contributions
+- **Standard Protocols** - Following established MCP memory patterns
+
+**FSCompliance Custom Advantages**
+- **Financial Compliance Focus** - Purpose-built for regulatory compliance scenarios
+- **Privacy-First Design** - Built-in financial data protection and anonymization
+- **Regulatory Intelligence** - Memory that understands compliance context and relationships
+- **Specialized Learning** - Optimized for compliance pattern recognition and improvement
+
+**💡 Strategic Decision:**
+
+**Why Custom Implementation**
+- **Regulatory Requirements** - Financial services require specialized privacy and audit controls
+- **Domain Optimization** - Generic solutions lack financial compliance context
+- **Integration Architecture** - Tight integration with FSCompliance's regulatory knowledge systems
+- **Future Flexibility** - Full control over memory evolution for compliance needs
+
+**Potential Future Hybrid Approach**
+- Could potentially use MCP-Mem0 for general functionality with FSCompliance extensions for compliance-specific features
+- Allows leveraging community developments while maintaining regulatory specialization
+
 ### Q: How does the FSCompliance MCP Server approach Short-term Memory?
 
 **A:** FSCompliance uses sophisticated short-term memory to maintain context and coherence within compliance analysis sessions:
@@ -1107,6 +1211,42 @@ Priority 5: General Context (Pruned as needed)
 - **Key Finding Extraction** - Identifying and preserving most important insights
 - **Action Item Creation** - Converting findings into actionable compliance tasks
 - **Knowledge Transfer** - Optionally transferring insights to long-term memory (with permission)
+
+---
+
+## 👥 Human Oversight & Responsibility
+
+### Q: What role should humans play when using FSCompliance recommendations?
+
+**A:** FSCompliance is designed as a decision-support tool that requires human oversight and professional judgment:
+
+**🧠 Human-in-the-Loop Requirements:**
+
+**Professional Oversight**
+- **Expert Review** - All compliance recommendations should be reviewed by qualified compliance professionals
+- **Final Decision Authority** - Humans retain final authority for all compliance decisions
+- **Context Validation** - Verify that AI recommendations fit your specific business context
+- **Risk Assessment** - Apply professional judgment to assess implementation risks
+
+**Quality Assurance**
+- **Spot Checking** - Regularly validate AI recommendations against known requirements
+- **Cross-Reference** - Verify critical findings against original regulatory sources
+- **Expert Consultation** - Consult specialists for complex or high-stakes interpretations
+- **Documentation** - Document human review and decision rationale
+
+**⚠️ Responsibility & Disclaimers:**
+
+**User Responsibility**
+- **Professional Liability** - Users remain fully responsible for compliance decisions and outcomes
+- **Due Diligence** - FSCompliance outputs require professional validation before implementation
+- **Regulatory Compliance** - Users must ensure compliance with all applicable regulations and internal policies
+- **Expert Consultation** - Complex matters require consultation with qualified legal and compliance professionals
+
+**AI Limitations**
+- **Tool Not Oracle** - FSCompliance provides analysis, not definitive legal advice
+- **Context Limitations** - AI may miss business-specific context or nuanced circumstances
+- **Evolving Regulations** - Regulatory interpretation continues to evolve; stay current with official guidance
+- **No Warranty** - No warranty provided for accuracy, completeness, or fitness for specific purposes
 
 ---
 
