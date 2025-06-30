@@ -181,4 +181,5 @@ Thumbs.db
 .nvm/
 .profile
 .sudo_as_admin_successful
-.vscode-server/
+.vscode-server/internal/
+*.html
