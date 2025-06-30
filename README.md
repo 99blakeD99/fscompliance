@@ -260,6 +260,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
+**Architecture & Vision:**
+- **Blake Dempster, Founder & Principal Architect**: Strategic vision, regulatory domain expertise, and technical architecture leadership
+
+**Core Technologies:**
 - **[Model Context Protocol](https://modelcontextprotocol.io/)**: Standard protocol specification
 - **[LightRAG](https://github.com/HKUDS/LightRAG)**: Knowledge retrieval and graph processing
 - **[FCA Handbook](https://www.handbook.fca.org.uk/)**: UK Financial Conduct Authority regulatory framework

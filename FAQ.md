@@ -6,6 +6,16 @@ This document addresses common questions about the FSCompliance MCP (Model Conte
 
 ---
 
+## Vision & Mission
+
+Compliance with legal, regulatory, and industry requirements is unavoidable in modern business, with Financial Services particularly affected. These requirements proliferate at an accelerating rate, and attempts to streamline them often create additional layers of complexity.
+
+The consequences of non-compliance can be severe - both in public reputation and legal liability. Prior to AI, this burden was becoming unmanageable, creating mounting friction, costs, and reduced agility for Financial Institutions.
+
+FSCompliance's vision is to leverage AI power through open-source innovation and MCPs (Model Context Protocol) accessible by any AI agent or LLM, making compliance manageable and efficient. Starting with the FCA Handbook, we'll progressively expand to other regulatory frameworks through a structured, phased approach, building collaborative compliance intelligence that benefits the entire financial services community.
+
+---
+
 ## 🤖 AI Agent Integration
 
 ### Q: How will AI agents decide to use the FSCompliance MCP Server?
@@ -23,12 +33,15 @@ The beauty of MCP is that this happens automatically - AI agents can intelligent
 
 **A:** FSCompliance provides a comprehensive suite of compliance analysis tools:
 
-**Core Analysis Tools:**
+**Core Analysis Tools (Phase 2 Complete):**
 - `analyze_compliance` - Comprehensive policy analysis against FCA requirements
 - `detect_gaps` - Identify specific compliance gaps in policies or procedures
 - `extract_requirements` - Extract relevant regulatory requirements from FCA Handbook
+
+**Planned Tools (Phase 3):**
 - `categorize_requirements` - Classify requirements by type, risk level, and applicability
 - `score_compliance` - Generate compliance scores with confidence metrics
+- `monitor_regulatory_changes` - Real-time tracking of FCA Handbook updates
 
 **Query & Search Tools:**
 - `search_regulations` - Search FCA Handbook with natural language queries  
@@ -399,23 +412,23 @@ For complete details on our AI safety framework, see GuardRails.md *(to be creat
 └─────────────────────────────────────────────────────────────┘
                               │
 ┌─────────────────────────────────────────────────────────────┐
+│                Knowledge Management Layer                   │
+│           LightRAG • Vector DB • Graph DB                  │
+└─────────────────────────────────────────────────────────────┘
+                              │
+┌─────────────────────────────────────────────────────────────┐
 │                Compliance Intelligence Layer                │
 │  Gap Detection • Scoring • Categorization • Confidence    │
 └─────────────────────────────────────────────────────────────┘
                               │
 ┌─────────────────────────────────────────────────────────────┐
-│                 Query Processing Layer                      │
-│  Routing • NLP • Response Generation • Ranking • Caching  │
+│                Memory and Learning Layer                    │
+│  Long-term Memory • Privacy Controls • Audit Trails       │
 └─────────────────────────────────────────────────────────────┘
                               │
 ┌─────────────────────────────────────────────────────────────┐
 │                  LLM Abstraction Layer                     │
 │  Multi-Model Support • Cost Optimization • Load Balancing │
-└─────────────────────────────────────────────────────────────┘
-                              │
-┌─────────────────────────────────────────────────────────────┐
-│                Knowledge Management Layer                   │
-│           LightRAG • Vector DB • Graph DB                  │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -483,7 +496,7 @@ For complete details on our AI safety framework, see GuardRails.md *(to be creat
 **Phase 2: Core Intelligence (Weeks 5-8)**
 - **AI Components** - Implemented 15 major components across 3 core layers:
   - 5 Compliance Intelligence components (requirement extraction, gap detection, scoring)
-  - 5 Query Processing components (routing, NLP, response generation, ranking, optimization)
+  - 5 Knowledge Management components (document processing, entity extraction, retrieval)
   - 5 LLM Abstraction components (provider interface, multi-model support, cost optimization)
 - **Enterprise Features** - Built production-ready features like caching, error handling, monitoring
 - **Code Quality** - Maintained high standards with comprehensive documentation and testing
@@ -518,10 +531,11 @@ For complete details on our AI safety framework, see GuardRails.md *(to be creat
 
 **🤝 Human-AI Collaboration:**
 
-**Human Strategic Direction**
-- Project vision, business requirements, and regulatory expertise
+**Human Strategic Direction (Blake Dempster, Founder & Principal Architect)**
+- Project vision, business requirements, and regulatory domain expertise
 - High-level architecture decisions and technology choices
 - User experience design and adoption strategy
+- Financial services industry knowledge and regulatory compliance insights
 
 **Claude Code Implementation**
 - Detailed technical implementation and code generation
@@ -1372,14 +1386,14 @@ Priority 5: General Context (Pruned as needed)
 
 **🗓️ Development Roadmap:**
 
-**Q1 2025: Integration & Core Features**
-- **Phase 3 Completion** - MCP server integration and end-to-end pipeline
+**Q1 2025: Phase 3 Development**
+- **Phase 3 Implementation** - MCP server integration and priority tools development
 - **Web Interface** - Browser-based compliance analysis platform
 - **API Enhancement** - Extended REST API with advanced query capabilities
 - **Performance Optimization** - Response time and accuracy improvements
 - **Multi-Framework Foundation** - Architecture for supporting additional regulatory frameworks
 
-**Q2 2025: Intelligence & Automation**
+**Q2 2025: Phase 3 Completion & Advanced Features**
 - **Advanced AI Features** - Enhanced reasoning and complex scenario analysis
 - **Automated Monitoring** - Continuous compliance monitoring and alerting
 - **Predictive Analytics** - Early warning systems for compliance risks
@@ -1433,5 +1447,16 @@ This roadmap ensures FSCompliance continues to evolve with the needs of the fina
 
 ---
 
-*Last updated: 2025-06-27*  
+## About This Document
+
+**Author**: Blake Dempster, Founder & Principal Architect  
+**Co-Authored by**: Claude Code (claude.ai/code)  
+**Created**: 2024-12-25  
+**Last Updated**: 2024-12-25  
+**Purpose**: Comprehensive FAQ addressing user concerns, technical architecture, and business decisions for FSCompliance MCP platform adoption.
+
+*This FAQ document represents the current architectural vision and planned capabilities for FSCompliance. As development progresses, responses will be updated to reflect actual implementation status and user feedback.*
+
 *For additional questions or clarifications, please visit our [GitHub Discussions](https://github.com/99blakeD99/fscompliance/discussions) or contact support@fscompliance.org*
+
+---

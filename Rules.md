@@ -1,11 +1,13 @@
 # FSCompliance Development Rules
 
-This document establishes development guidelines and conventions for the FSCompliance project to ensure consistency, quality, and regulatory compliance across all contributions.
+*Development standards established by Blake Dempster, Founder & Principal Architect*
+
+This document establishes development guidelines and conventions for the FSCompliance project to ensure consistency, quality, and regulatory compliance across all contributions. These rules reflect enterprise-grade development practices and financial services regulatory requirements.
 
 ## 🔄 Project Awareness & Context
 
 - **Always read `PLANNING.md`** at the start of a new conversation to understand the project's architecture, goals, style, and constraints.
-- **Check `TASK.md`** before starting a new task. If the task isn't listed, add it with a brief description and today's date.
+- **Check `Tasks.md`** before starting a new task. If the task isn't listed, add it with a brief description and today's date.
 - **Use consistent naming conventions, file structure, and architecture patterns** as described in `PLANNING.md`.
 - **Maintain MCP protocol compliance** - ensure all server implementations follow MCP specification requirements.
 
@@ -71,6 +73,15 @@ This document establishes development guidelines and conventions for the FSCompl
 - **Comment non-obvious code** and ensure everything is understandable to a mid-level developer.
 - When writing complex logic, **add an inline `# Reason:` comment** explaining the why, not just the what.
 - **Document regulatory implications** - add comments explaining how code relates to specific FCA requirements when applicable.
+
+## 📋 Strategic Documentation Standards
+
+- **Maintain brand consistency** across all documentation using `Brand.md` guidelines and positioning language.
+- **Separate internal vs public** documentation - use `internal/` folder for sensitive strategy materials and stakeholder presentations.
+- **Cross-reference strategic documents** - ensure alignment between `ComplianceTools.md`, `Brand.md`, and technical implementation.
+- **Professional presentations** - create HTML versions for stakeholder presentations when needed, following brand guidelines.
+- **Market positioning accuracy** - validate all external claims against `ComplianceTools.md` analysis and competitive research.
+- **Attribution consistency** - include proper co-authorship attribution in About sections of all strategic documents.
 
 ## 🔒 Security & Privacy
 
