@@ -15,13 +15,14 @@ This comprehensive planning document reflects deep regulatory domain expertise a
 - Provide AI-powered compliance analysis and gap identification
 - Support regulatory reporting and inspection preparation
 - Maintain long-term memory for improved responses over time
-- Ensure LLM-agnostic architecture with privacy controls
+- Ensure LLM-agnostic architecture with proven default and privacy controls
 
 ### Initial Scope
 - **Regulatory Focus**: FCA Handbook (UK Financial Conduct Authority)
 - **Target Users**: Compliance Officers, Risk Managers, Regulatory Inspectors, Professional Advisers
 - **Core Technology Stack**: Python, Pydantic, LightRAG, GitHub
-- **Default LLM**: LLaMA 3 (with architecture supporting Falcon, Mistral Medium, and user-defined models)
+- **Default LLM**: Claude 3.5 Sonnet (with architecture supporting LLaMA 3, Falcon, Mistral Medium, and user-defined models)
+- **LLM Strategy**: See LLMChoice.md for comprehensive analysis and strategic rationale
 
 ## Use Cases
 
@@ -49,7 +50,7 @@ This comprehensive planning document reflects deep regulatory domain expertise a
                               ▼                        ▼
                        ┌──────────────┐         ┌─────────────┐
                        │ LLM Gateway  │         │  LightRAG   │
-                       │ (LLaMA 3)    │         │  Engine     │
+                       │(Claude 3.5)  │         │  Engine     │
                        └──────────────┘         └─────────────┘
 ```
 
@@ -80,8 +81,8 @@ This comprehensive planning document reflects deep regulatory domain expertise a
 - **Audit Trails**: Compliance decision logging
 
 #### 5. LLM Abstraction Layer
-- **Multi-Model Support**: Falcon (default), Mistral Medium, LLaMA 3, user-defined
-- **Cost Optimization**: Model selection based on query complexity
+- **Multi-Model Support**: Claude 3.5 Sonnet (default), LLaMA 3, Falcon, Mistral Medium, user-defined
+- **Quality Optimization**: Claude 3.5 Sonnet default with cost-based alternatives for specific use cases
 - **Minimal Multimodal**: Basic document and text processing
 - **Microsoft Copilot Studio**: Integration pathway
 

@@ -13,6 +13,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **`Rules.md`**: Development guidelines, coding standards, and project-specific conventions
 - **`Tasks.md`**: Current and completed development tasks organized by development phases
 - **`ComplianceTools.md`**: Strategic market analysis and comprehensive MCP tool roadmap
+- **`LLMChoice.md`**: LLM selection strategy and Claude 3.5 Sonnet decision rationale
 
 ### Documentation & Brand Materials
 - **`FAQ.md`**: User-facing project information and comprehensive capability descriptions
@@ -67,9 +68,10 @@ FSCompliance follows a layered architecture as the first MCP-integrated complian
 2. **Knowledge Management Layer**: LightRAG-powered FCA Handbook processing
 3. **Compliance Intelligence Layer**: AI-powered requirement analysis and gap detection
 4. **Memory and Learning Layer**: Long-term memory with privacy controls
-5. **LLM Abstraction Layer**: Multi-model support (LLaMA 3, Falcon, Mistral Medium)
+5. **LLM Abstraction Layer**: Multi-model support with Claude 3.5 Sonnet default (LLaMA 3, Falcon, Mistral Medium alternatives)
 
 ### Strategic Architecture Decisions
+- **LLM Strategy**: Claude 3.5 Sonnet selected as default based on extensive real-world validation through FSCompliance development per `LLMChoice.md`
 - **Database Evolution**: Migrating to Supabase (PostgreSQL + PGVector) per `DatabaseStrategy.md` for simplified architecture and real-time capabilities
 - **MCP Tool Priority**: 8 priority tools identified in `ComplianceTools.md` for Phase 3 implementation
 - **Brand Positioning**: Positioned as first MCP-integrated compliance platform per `Brand.md` competitive analysis

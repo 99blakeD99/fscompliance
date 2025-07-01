@@ -115,6 +115,68 @@ Each tool includes detailed schemas, example usage, and response formats in the 
 
 ---
 
+## 🧠 Language Model Strategy
+
+### Q: What language model does FSCompliance use by default, and why?
+
+**A:** FSCompliance uses **Claude 3.5 Sonnet as the default language model**, selected after comprehensive real-world validation through the development of FSCompliance itself.
+
+**Why Claude 3.5 Sonnet?**
+
+- **Proven Performance**: Claude 3.5 Sonnet underwent extensive testing through hundreds of hours of FSCompliance development work - complex regulatory analysis, multi-document synthesis, strategic planning, and technical architecture tasks that are directly analogous to what FSCompliance does in production
+- **Compliance Accuracy**: Financial services compliance requires the highest accuracy standards. Regulatory errors can result in significant fines, reputation damage, and legal liability - making quality more important than cost optimization
+- **Professional Output**: Consistently delivers enterprise-appropriate analysis suitable for regulatory scrutiny and professional use
+- **Complex Reasoning**: Demonstrates superior performance on nuanced regulatory interpretation and risk assessment tasks
+
+**Evolution of Our Approach:**
+Initially, we set out to remain completely LLM-agnostic, allowing users total freedom of choice. Through extensive development experience, we evolved to **"LLM-agnostic-with-strong-recommendation"** - maintaining user choice while providing a proven default based on real-world validation.
+
+### Q: Can I use a different language model instead of Claude 3.5 Sonnet?
+
+**A:** Absolutely! FSCompliance's architecture provides complete flexibility for enterprise customers to choose their preferred language model:
+
+**Alternative Options:**
+- **LLaMA 3** - Cost-effective option for high-volume, lower-complexity queries
+- **Mistral Medium** - European-focused alternative with competitive performance
+- **Falcon** - Open-source option for on-premises deployments
+- **Custom Models** - Support for fine-tuned or proprietary models
+- **Hybrid Approaches** - Different models for different tool types based on complexity
+
+**Configuration:**
+- Per-tool model selection (e.g., Claude for complex analysis, LLaMA for simple extraction)
+- Tiered service levels (Premium/Standard/Custom)
+- Cost vs quality optimization based on your requirements
+- Complete user control over model selection and usage
+
+**Cost Considerations:**
+While Claude 3.5 Sonnet has higher per-token costs, compliance query value typically ranges from £50-500 (based on compliance officer time), making LLM costs (typically £0.09 per query) a small fraction of total value delivered.
+
+### Q: How do I know which language model is best for my use case?
+
+**A:** The choice depends on your specific requirements:
+
+**Choose Claude 3.5 Sonnet (Default) if:**
+- Accuracy is critical for regulatory compliance decisions
+- You need professional-grade output for regulatory scrutiny
+- Complex multi-document analysis is common
+- You prefer proven performance over cost optimization
+
+**Choose LLaMA 3 if:**
+- High-volume processing with cost sensitivity
+- Simpler extraction and categorization tasks
+- On-premises deployment requirements
+- Basic compliance queries and reporting
+
+**Choose Custom Models if:**
+- Specific regulatory jurisdiction focus (e.g., EU frameworks)
+- Proprietary compliance frameworks
+- Integration with existing AI infrastructure
+- Specialized fine-tuning requirements
+
+For detailed analysis of our language model selection process, see [LLMChoice.md](LLMChoice.md).
+
+---
+
 ## 💼 Business & Deployment
 
 ### Q: Is it better to clone the FSCompliance MCP Server from GitHub, or pay for a hosted service?
