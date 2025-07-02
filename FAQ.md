@@ -8,11 +8,15 @@ This document addresses common questions about the FSCompliance MCP (Model Conte
 
 ## Vision & Mission
 
-Compliance with legal, regulatory, and industry requirements is unavoidable in modern business, with Financial Services particularly affected. These requirements proliferate at an accelerating rate, and attempts to streamline them often create additional layers of complexity.
+Compliance with legal, regulatory, and industry requirements is unavoidable in modern business, with Financial Services particularly affected. These requirements proliferate at an accelerating rate, and attempts to streamline them often create additional layers of regulatory red tape that compound complexity rather than reducing it.
 
 The consequences of non-compliance can be severe - both in public reputation and legal liability. Prior to AI, this burden was becoming unmanageable, creating mounting friction, costs, and reduced agility for Financial Institutions.
 
-FSCompliance's vision is to leverage AI power through open-source innovation and MCPs (Model Context Protocol) accessible by any AI agent or LLM, making compliance manageable and efficient. Starting with the FCA Handbook, we'll progressively expand to other regulatory frameworks through a structured, phased approach, building collaborative compliance intelligence that benefits the entire financial services community.
+FSCompliance is the world's first universal compliance intelligence platform designed for AI agents through Model Context Protocol (MCP) integration. We transform the regulatory burden that holds back financial innovation - slicing through red tape to enable compliance professionals to focus on senior executive tasks rather than getting lost in regulatory small-print.
+
+Our mission: Making it easier to bring the right financial products safely to consumers by providing any AI agent with instant access to comprehensive compliance intelligence. Starting with the FCA Handbook as our foundation, FSCompliance rapidly ingests any well-articulated Standard - regulatory frameworks, industry codes, statutory requirements, international standards, and jurisdictional regulations.
+
+By leveraging Claude 3.5 Sonnet's proven capabilities through hundreds of hours of real-world validation, FSCompliance delivers enterprise-grade data security with Anthropic's Zero Data Retention and HIPAA-eligible services, ensuring financial institutions can confidently deploy AI-powered compliance intelligence.
 
 ---
 
@@ -119,37 +123,37 @@ Each tool includes detailed schemas, example usage, and response formats in the 
 
 ### Q: What language model does FSCompliance use by default, and why?
 
-**A:** FSCompliance uses **Claude 3.5 Sonnet as the default language model**, selected after comprehensive real-world validation through the development of FSCompliance itself.
+**A:** FSCompliance defaults to **Claude 3.5 Sonnet** - your choice, but really Claude is the best answer for compliance accuracy and data security.
 
-**Why Claude 3.5 Sonnet?**
+**Why Claude 3.5 Sonnet Leads:**
 
-- **Proven Performance**: Claude 3.5 Sonnet underwent extensive testing through hundreds of hours of FSCompliance development work - complex regulatory analysis, multi-document synthesis, strategic planning, and technical architecture tasks that are directly analogous to what FSCompliance does in production
-- **Compliance Accuracy**: Financial services compliance requires the highest accuracy standards. Regulatory errors can result in significant fines, reputation damage, and legal liability - making quality more important than cost optimization
-- **Professional Output**: Consistently delivers enterprise-appropriate analysis suitable for regulatory scrutiny and professional use
-- **Complex Reasoning**: Demonstrates superior performance on nuanced regulatory interpretation and risk assessment tasks
+- **Proven Excellence**: Claude 3.5 Sonnet underwent the most comprehensive real-world evaluation possible through hundreds of hours of FSCompliance development - complex regulatory analysis, multi-document synthesis, strategic planning, and technical architecture tasks directly analogous to production requirements
+- **Compliance Accuracy Premium**: In financial services, regulatory errors cost millions in fines, reputation damage, and legal liability. The small cost differential between LLMs is negligible compared to compliance failure risks
+- **Enterprise Data Security**: Anthropic's Zero Data Retention, HIPAA-eligible services, and enterprise-grade privacy controls address financial services' most stringent data protection requirements
+- **Professional Grade Output**: Consistently delivers enterprise-appropriate analysis suitable for regulatory scrutiny and professional use
 
-**Evolution of Our Approach:**
-Initially, we set out to remain completely LLM-agnostic, allowing users total freedom of choice. Through extensive development experience, we evolved to **"LLM-agnostic-with-strong-recommendation"** - maintaining user choice while providing a proven default based on real-world validation.
+**Your Choice, Proven Recommendation:**
+While FSCompliance supports complete flexibility for enterprise model selection, Claude 3.5 Sonnet represents the optimal choice for most compliance applications based on extensive real-world validation. Financial executives' time is extremely valuable (£150-500+ per hour) - making it a false economy to experiment with unproven alternatives in critical compliance contexts.
 
 ### Q: Can I use a different language model instead of Claude 3.5 Sonnet?
 
-**A:** Absolutely! FSCompliance's architecture provides complete flexibility for enterprise customers to choose their preferred language model:
+**A:** Absolutely! FSCompliance maintains complete enterprise flexibility while providing proven excellence as the default:
 
-**Alternative Options:**
-- **LLaMA 3** - Cost-effective option for high-volume, lower-complexity queries
+**Multi-Model Architecture:**
+- **Claude 3.5 Sonnet** (Default) - Proven through extensive FSCompliance development validation
+- **LLaMA 3** - Cost-effective for high-volume, lower-complexity queries
 - **Mistral Medium** - European-focused alternative with competitive performance
-- **Falcon** - Open-source option for on-premises deployments
-- **Custom Models** - Support for fine-tuned or proprietary models
-- **Hybrid Approaches** - Different models for different tool types based on complexity
+- **Custom Models** - Support for proprietary or specialized models
+- **Hybrid Deployments** - Different models for different complexity levels
 
-**Configuration:**
-- Per-tool model selection (e.g., Claude for complex analysis, LLaMA for simple extraction)
-- Tiered service levels (Premium/Standard/Custom)
-- Cost vs quality optimization based on your requirements
-- Complete user control over model selection and usage
+**Enterprise Control:**
+- **Flexible Configuration** - Per-tool model selection based on complexity and requirements
+- **Data Sovereignty** - Local deployment options for maximum control
+- **Cost Optimization** - Balance quality requirements with budget constraints
+- **Security First** - Models that meet your data protection requirements
 
-**Cost Considerations:**
-While Claude 3.5 Sonnet has higher per-token costs, compliance query value typically ranges from £50-500 (based on compliance officer time), making LLM costs (typically £0.09 per query) a small fraction of total value delivered.
+**Value Perspective:**
+Compliance officer time costs £150-500+ per hour, while LLM costs represent ~£0.09 per query (0.02-0.18% of query value). For critical compliance decisions, proven accuracy justifies premium model selection.
 
 ### Q: How do I know which language model is best for my use case?
 
@@ -223,58 +227,43 @@ For detailed analysis of our language model selection process, see [LLMChoice.md
 | **Regulatory Tech Vendors** | Self-Hosted + White-Label | Need customization and can provide technical expertise |
 | **Development/Testing** | Clone from GitHub | Cost-effective for evaluation and development |
 
-### Q: Which LLM is best for the FSCompliance MCP Server?
+### Q: Which deployment approach best balances accuracy, security, and cost?
 
-**A:** FSCompliance's multi-model architecture supports various LLMs, each with different strengths:
+**A:** FSCompliance offers flexible deployment options that prioritize proven performance and enterprise security:
 
-**🏆 Recommended for Production:**
+**🏆 Recommended Enterprise Approach:**
 
-**1. Mistral 7B - Best Overall**
-- ✅ Excellent reasoning for complex regulatory analysis
-- ✅ Strong multilingual support (English, French, German, Spanish)
-- ✅ Good balance of cost and performance
-- ✅ Handles long regulatory documents well
-- 💰 Cost: ~$0.007 per 1K tokens
+**1. Cloud Claude 3.5 Sonnet (Default)**
+- ✅ Proven through hundreds of hours of FSCompliance development validation
+- ✅ Anthropic's Zero Data Retention and HIPAA-eligible services
+- ✅ Enterprise-grade data protection without local infrastructure complexity
+- ✅ Superior compliance reasoning validated in real-world scenarios
+- 💰 Cost: ~£0.09 per query (0.02-0.18% of compliance officer hourly value)
 
-**2. Llama 3 (70B) - Best for Self-Hosted**
-- ✅ Highest accuracy for complex compliance analysis
-- ✅ No usage costs (self-hosted)
-- ✅ Full data privacy and control
-- ✅ Excellent instruction following
-- 🔧 Requires: Significant GPU resources (80GB+ VRAM)
+**2. Hybrid Security Approach**
+- ✅ Claude 3.5 Sonnet for complex analysis with enterprise data protections
+- ✅ Local models for maximum data sovereignty when required
+- ✅ Flexible routing based on data sensitivity and requirements
+- ✅ Best of both worlds: proven accuracy + complete control
 
-**3. Claude 3.5 Sonnet - Best for Critical Analysis**
-- ✅ Superior reasoning and accuracy
-- ✅ Excellent safety and reliability
-- ✅ Strong performance on financial regulations
-- ✅ Fast response times
-- 💰 Cost: Variable (check current API pricing)
+**3. Self-Hosted Alternative (LLaMA 3)**
+- ✅ Complete data control and local processing
+- ✅ No per-query costs after infrastructure investment
+- ✅ Custom security configurations
+- 🔧 Requires: Significant GPU resources and expertise
 
-**📊 Performance Comparison:**
+**💡 Smart Selection Framework:**
 
-| Model | Accuracy | Speed | Cost | Compliance Analysis | Regulatory Reasoning |
-|-------|----------|-------|------|-------------------|-------------------|
-| **Claude 3.5 Sonnet** | High | Fast | High | Excellent | Excellent |
-| **Mistral 7B** | High | Fast | Medium | Very Good | Very Good |
-| **Llama 3 (70B)** | High | Medium | Free* | Excellent | Excellent |
-| **GPT-4** | 94% | Medium | High | Very Good | Very Good |
-| **Falcon 40B** | 89% | Medium | Low | Good | Good |
+| Priority | Recommended Approach | Key Benefits |
+|----------|---------------------|---------------|
+| **Proven Accuracy** | Claude 3.5 Sonnet (Cloud) | Extensive validation, enterprise privacy |
+| **Data Sovereignty** | LLaMA 3 (Self-hosted) | Complete control, local processing |
+| **Balanced Approach** | Hybrid Deployment | Flexibility + proven performance |
 
-*Free for self-hosted, but requires significant infrastructure costs
-
-**💡 Our Smart Selection System:**
-
-FSCompliance automatically chooses the optimal model based on:
-- **Query Complexity** - Simple queries use smaller/cheaper models
-- **Cost Budget** - Respects your cost constraints
-- **Latency Requirements** - Balances speed vs. accuracy
-- **Data Sensitivity** - Routes sensitive data to local models
-
-**🎯 Quick Recommendations:**
-- **Getting Started**: Mistral 7B (good balance)
-- **Maximum Accuracy**: Claude 3.5 Sonnet
-- **Cost Optimization**: Llama 3 (self-hosted)
-- **Enterprise Deployment**: Hybrid approach using multiple models
+**🎯 Decision Guide:**
+- **Highest Accuracy + Enterprise Security**: Claude 3.5 Sonnet with Zero Data Retention
+- **Maximum Control**: Self-hosted with local model deployment
+- **Flexible Enterprise**: Hybrid approach with intelligent routing
 
 ---
 
@@ -463,34 +452,39 @@ For complete details on our AI safety framework, see GuardRails.md *(to be creat
 
 ### Q: At a high level, what technology architecture has been adopted for the FSCompliance MCP Server?
 
-**A:** FSCompliance uses a modern, layered architecture designed for scalability, maintainability, and regulatory compliance:
+**A:** FSCompliance implements the world's first MCP-integrated compliance platform with enterprise-grade architecture designed for universal Standards processing:
 
 **🏛️ Architectural Layers:**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    MCP Server Layer                         │
-│  FastAPI • JSON-RPC 2.0 • WebSocket • OAuth 2.1          │
+│            MCP-Integrated Compliance Platform               │
+│   First AI-Agent Native • Universal Standards Engine      │
 └─────────────────────────────────────────────────────────────┘
                               │
 ┌─────────────────────────────────────────────────────────────┐
-│                Knowledge Management Layer                   │
-│           LightRAG • Vector DB • Graph DB                  │
+│                  MCP Server Layer                          │
+│    FastAPI • JSON-RPC 2.0 • WebSocket • OAuth 2.1        │
 └─────────────────────────────────────────────────────────────┘
                               │
 ┌─────────────────────────────────────────────────────────────┐
-│                Compliance Intelligence Layer                │
-│  Gap Detection • Scoring • Categorization • Confidence    │
+│                Universal Standards Management               │
+│  Regulatory Frameworks • Industry Codes • Statutory Reqs  │
 └─────────────────────────────────────────────────────────────┘
                               │
 ┌─────────────────────────────────────────────────────────────┐
-│                Memory and Learning Layer                    │
-│  Long-term Memory • Privacy Controls • Audit Trails       │
+│               Compliance Intelligence Engine                │
+│    Red Tape Slicing • Gap Detection • Risk Scoring       │
 └─────────────────────────────────────────────────────────────┘
                               │
 ┌─────────────────────────────────────────────────────────────┐
-│                  LLM Abstraction Layer                     │
-│  Multi-Model Support • Cost Optimization • Load Balancing │
+│           Enterprise Security & Privacy Layer              │
+│   Zero Data Retention • HIPAA Eligible • Audit Trails    │
+└─────────────────────────────────────────────────────────────┘
+                              │
+┌─────────────────────────────────────────────────────────────┐
+│          Claude 3.5 Sonnet Default + Multi-Model          │
+│    Proven Accuracy • Enterprise Privacy • User Choice     │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -845,7 +839,7 @@ Start with cloud APIs for development and testing, then move to self-hosted for 
 
 ### Q: Does the FSCompliance MCP Server have a corpus of Ground Truth?
 
-**A:** Yes, FSCompliance maintains multiple layers of ground truth data to ensure accuracy and provide validation benchmarks:
+**A:** Yes, FSCompliance maintains multiple layers of ground truth data to support accuracy and provide validation benchmarks:
 
 **📚 Primary Ground Truth Sources:**
 
@@ -1050,9 +1044,9 @@ Raw Document → Parser → Structure Extractor → Chunker → Embedder → Vec
 
 ## 💾 Memory & Learning
 
-### Q: How does the FSCompliance MCP Server approach Long-term Memory?
+### Q: How does FSCompliance approach long-term memory and data security?
 
-**A:** FSCompliance implements a sophisticated long-term memory system designed specifically for regulatory compliance with strong privacy controls:
+**A:** FSCompliance implements enterprise-grade memory designed specifically for financial services with privacy-first architecture and comprehensive data protection:
 
 **🧠 Memory Architecture:**
 
@@ -1082,14 +1076,20 @@ Raw Document → Parser → Structure Extractor → Chunker → Embedder → Vec
 - **Selective Retention** - Different retention policies for different types of information
 - **Right to Deletion** - Complete removal of organization-specific memory on request
 
-**Data Classification & Protection**
+**🔒 Enterprise Data Security Architecture**
 ```
-Public Regulatory Data → Store Permanently
-Anonymized Patterns → Store with 5-year retention
-Organization Metadata → Store with 2-year retention  
-Personal Information → Never stored
-Sensitive Business Data → Local processing only
+Public Regulatory Data → Stored with enterprise protections
+Anonymized Patterns → 5-year retention with data sovereignty
+Organization Metadata → 2-year retention, customer-controlled  
+Personal Information → Never processed or stored
+Sensitive Business Data → Zero Data Retention options available
 ```
+
+**Claude 3.5 Sonnet Data Protection:**
+- **Zero Training Use**: Enterprise API data never used for model training
+- **Automatic Deletion**: 30-day maximum retention with ZDR for immediate deletion
+- **Customer Ownership**: Complete data control and audit capabilities
+- **HIPAA-Eligible**: Available for sensitive financial data processing
 
 **Compliance-Safe Learning**
 - **Pattern Abstraction** - Learn general patterns without storing specific business details
@@ -1294,15 +1294,15 @@ Priority 5: General Context (Pruned as needed)
 
 ### Q: What role should humans play when using FSCompliance recommendations?
 
-**A:** FSCompliance is designed as a decision-support tool that requires human oversight and professional judgment:
+**A:** FSCompliance slices through regulatory red tape to enable senior executive decision-making, but requires professional oversight and human judgment for all compliance decisions:
 
 **🧠 Human-in-the-Loop Requirements:**
 
-**Professional Oversight**
-- **Expert Review** - All compliance recommendations should be reviewed by qualified compliance professionals
-- **Final Decision Authority** - Humans retain final authority for all compliance decisions
-- **Context Validation** - Verify that AI recommendations fit your specific business context
-- **Risk Assessment** - Apply professional judgment to assess implementation risks
+**Senior Executive Focus**
+- **Strategic Decision Support** - FSCompliance handles regulatory analysis so professionals can focus on strategic decisions
+- **Expert Review Required** - All recommendations require review by qualified compliance professionals
+- **Final Decision Authority** - Humans retain complete authority for all compliance decisions
+- **Business Context Integration** - Professional judgment essential for business-specific implementation
 
 **Quality Assurance**
 - **Spot Checking** - Regularly validate AI recommendations against known requirements
@@ -1312,39 +1312,43 @@ Priority 5: General Context (Pruned as needed)
 
 **⚠️ Responsibility & Disclaimers:**
 
-**User Responsibility**
-- **Professional Liability** - Users remain fully responsible for compliance decisions and outcomes
-- **Due Diligence** - FSCompliance outputs require professional validation before implementation
-- **Regulatory Compliance** - Users must ensure compliance with all applicable regulations and internal policies
-- **Expert Consultation** - Complex matters require consultation with qualified legal and compliance professionals
+**Professional Responsibility**
+- **Complete Accountability** - Users remain fully responsible for all compliance decisions and outcomes
+- **Professional Validation** - FSCompliance analysis requires expert review before implementation
+- **Regulatory Compliance** - Users must ensure adherence to all applicable regulations and policies
+- **Expert Consultation** - Complex interpretations require qualified legal and compliance professional input
+- **Consumer Protection Focus** - Ultimately serves the goal of bringing right products safely to consumers
 
-**AI Limitations**
-- **Tool Not Oracle** - FSCompliance provides analysis, not definitive legal advice
-- **Context Limitations** - AI may miss business-specific context or nuanced circumstances
-- **Evolving Regulations** - Regulatory interpretation continues to evolve; stay current with official guidance
-- **No Warranty** - No warranty provided for accuracy, completeness, or fitness for specific purposes
+**AI as Compliance Intelligence Tool**
+- **Decision Support Tool** - FSCompliance provides analysis to support professional decision-making, not replace it
+- **Context Awareness** - AI may not capture all business-specific nuances requiring professional judgment
+- **Regulatory Evolution** - Compliance requirements continuously evolve; maintain current awareness of official guidance
+- **Professional Standards** - No warranty for accuracy; professional validation required for all decisions
 
 ---
 
 ## 🌍 Future & Community
 
-### Q: What regulatory frameworks will be supported beyond FCA?
+### Q: How does the universal Standards engine expand beyond FCA?
 
-**A:** FSCompliance is designed with a modular architecture to support multiple regulatory frameworks. Our expansion roadmap includes:
+**A:** FSCompliance's universal compliance intelligence platform rapidly ingests any well-articulated Standard, transforming regulatory burden across all financial services areas:
 
-**🎯 Phase 3-4 Expansion (Next 6 Months):**
+**🌍 Universal Standards Expansion (Phases 3-4):**
 
-**European Frameworks**
-- **MiFID II** (Markets in Financial Instruments Directive) - EU investment services
-- **GDPR** (General Data Protection Regulation) - Data privacy and protection
-- **PCI DSS** (Payment Card Industry Data Security Standard) - Payment processing
-- **EMIR** (European Market Infrastructure Regulation) - Derivatives trading
+**Regulatory Frameworks**
+- **MiFID II** (EU investment services) - Slicing through complex European investment regulations
+- **SEC Rules** (US securities) - Making US compliance accessible to AI agents
+- **Basel III** (International banking) - Universal banking standards intelligence
+- **CFTC Regulations** (Derivatives) - Reducing complexity in derivatives compliance
 
-**US Regulatory Frameworks**
-- **SEC Regulations** (Securities and Exchange Commission) - US securities law
-- **FINRA Rules** (Financial Industry Regulatory Authority) - Broker-dealer regulations
-- **CFTC Regulations** (Commodity Futures Trading Commission) - Derivatives and commodities
-- **Federal Banking Regulations** (OCC, FDIC, Federal Reserve) - Banking supervision
+**Industry Codes & Standards**
+- **Conduct Codes** - Professional standards across financial services
+- **Best Practice Guidelines** - Industry-developed compliance frameworks
+- **International Standards** (IFRS, SOX, ISO) - Global standards intelligence
+- **Jurisdictional Regulations** - Multi-jurisdiction compliance support
+
+**Strategic Benefits:**
+Each new Standard integration makes it easier to bring innovative financial products safely to consumers by reducing regulatory friction and enabling faster, more confident compliance decisions.
 
 **🌐 Medium-Term Expansion (6-18 Months):**
 
@@ -1505,7 +1509,7 @@ Priority 5: General Context (Pruned as needed)
 - **User Advisory Board** - Regular input from key users on product direction
 - **Quarterly Surveys** - Comprehensive user satisfaction and needs assessment
 
-This roadmap ensures FSCompliance continues to evolve with the needs of the financial services compliance community while maintaining the highest standards of accuracy and reliability.
+This expansion roadmap supports FSCompliance's mission to slice through regulatory red tape globally, making compliance intelligence universally accessible to AI agents while maintaining the proven accuracy and enterprise security that enables confident decision-making in bringing better financial products to consumers.
 
 ---
 

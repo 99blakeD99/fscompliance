@@ -1,8 +1,6 @@
 # FSCompliance Development Rules
 
-*Development standards established by Blake Dempster, Founder & Principal Architect*
-
-This document establishes development guidelines and conventions for the FSCompliance project to ensure consistency, quality, and regulatory compliance across all contributions. These rules reflect enterprise-grade development practices and financial services regulatory requirements.
+This document establishes development guidelines and conventions for the FSCompliance project to ensure consistency, quality, and regulatory compliance across all code contributions. These rules reflect enterprise-grade development practices and financial services regulatory requirements.
 
 ## 🔄 Project Awareness & Context
 
@@ -31,8 +29,10 @@ This document establishes development guidelines and conventions for the FSCompl
 
 ## ✅ Task Completion
 
-- **Mark completed tasks in `TASK.md`** immediately after finishing them.
-- Add new sub-tasks or TODOs discovered during development to `TASK.md` under a "Discovered During Work" section.
+- **Mark completed major tasks in `Tasks.md`** when finishing phase-level development work
+- **Use `internal/todos.md`** for granular work tracking and detailed improvements  
+- **Add new sub-tasks or TODOs discovered during development** to `internal/todos.md` for detailed tracking
+- **After completing batch of todos, recommend how Tasks.md should be updated** based on completed work, and seek confirmation before making changes
 
 ## 📝 Git Commit Guidelines
 
@@ -100,4 +100,14 @@ This document establishes development guidelines and conventions for the FSCompl
 
 ---
 
+## About This Document
+
+**Author**: Blake Dempster, Founder & Principal Architect  
+**Co-Authored by**: Claude Code (claude.ai/code)  
+**Created**: 2024-12-25  
+**Last Updated**: 2024-12-25  
+**Purpose**: Development standards and conventions for FSCompliance project ensuring consistency, quality, and regulatory compliance across all code contributions.
+
 *These rules ensure FSCompliance maintains high standards for code quality, security, and regulatory compliance throughout development.*
+
+---

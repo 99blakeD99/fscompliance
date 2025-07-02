@@ -178,36 +178,36 @@ The cumulative effect is a more efficient, innovative, and stable financial serv
 - **Building**: Comprehensive regulatory relationship mapping, expert validation datasets
 - **Need**: Authoritative ground truth data, expert-validated benchmarks, real-world test scenarios
 
-The Sandbox's extensive datasets would be transformational for training accuracy and validation.
+The Sandbox's extensive datasets would be transformational for RAG accuracy and validation (no fine-tuning required per LLMChoice.md architectural decision).
 
 #### 4.2 What estimated compute do you believe your project will require?
 
 **Compute Requirements:**
 
 **Development Phase (3 months):**
-- **GPU**: 2-4 NVIDIA A100/H100 instances for model fine-tuning and inference
-- **Memory**: 500GB+ RAM for large-scale document processing and knowledge graph operations
-- **Storage**: 5TB+ for regulatory document corpus, embeddings, and model checkpoints
-- **CPU**: 64+ cores for parallel processing and data pipeline operations
+- **CPU**: 32-64 cores for document processing and knowledge graph operations
+- **Memory**: 128GB+ RAM for large-scale document processing and vector operations
+- **Storage**: 2TB+ for regulatory document corpus and embeddings
+- **API Access**: Claude 3.5 Sonnet and LLaMA 3 API quotas for inference
 
-**Training & Fine-tuning:**
-- **LLM Fine-tuning**: 8-16 GPU hours daily for regulatory language adaptation
-- **Embedding Generation**: 4-8 GPU hours for document corpus processing
+**RAG & Knowledge Processing:**
+- **Embedding Generation**: CPU-optimized instances for document corpus processing
 - **Knowledge Graph Processing**: 24-48 CPU hours for relationship extraction
-- **Validation Testing**: 2-4 GPU hours for accuracy benchmarking
+- **Vector Search Optimization**: High-memory instances for similarity operations
+- **Validation Testing**: API-based testing with expert benchmarks
 
 **Production Testing:**
-- **Inference**: 2-4 GPU instances for real-time compliance analysis
-- **Concurrent Users**: Support for 50+ simultaneous compliance queries
-- **Peak Load**: 10x normal capacity for stress testing
-- **Backup Processing**: Additional compute for redundancy and failover
+- **MCP Server**: 4-8 CPU instances for real-time compliance analysis
+- **Concurrent Users**: Support for 50+ simultaneous compliance queries via API
+- **Peak Load**: Auto-scaling for 10x normal capacity stress testing
+- **Database Operations**: PostgreSQL + PGVector for production workloads
 
 **Specialized Requirements:**
 - **Vector Search**: High-memory instances for large-scale similarity operations
 - **Graph Analysis**: CPU-optimized instances for complex relationship queries
-- **Multi-Model Inference**: Diverse GPU configurations for different LLM architectures
+- **Multi-Model API**: Enterprise API quotas for Claude 3.5 Sonnet and alternatives
 
-This compute scale would enable comprehensive training on authoritative regulatory data and validation against expert benchmarks.
+This compute approach leverages cloud APIs rather than local model training, significantly reducing infrastructure requirements while maintaining enterprise-grade performance.
 
 #### 4.3 What type of development tooling is your project likely to require?
 

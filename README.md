@@ -3,25 +3,45 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-green.svg)](https://modelcontextprotocol.io/)
+[![Claude 3.5 Sonnet](https://img.shields.io/badge/LLM-Claude%203.5%20Sonnet-blue.svg)](https://www.anthropic.com/claude)
 
-An open-source Model Context Protocol (MCP) service for financial services companies and institutions to manage compliance with regulatory "Conduct Requirements".
+**The open-source universal compliance intelligence platform built exclusively for financial services.** We rapidly ingest ANY well-articulated Standard to make compliance intelligence accessible to any AI agent through innovative MCP integration - slicing through red tape to enable compliance professionals to carry out senior executive tasks rather than get bogged down in small-print.
 
 ## 🎯 Overview
 
-FSCompliance leverages AI-powered knowledge retrieval and graph processing to help financial organizations:
+**FSCompliance is positioned as the first MCP-integrated universal compliance platform** for financial services. Unlike many FS AI approaches that treat AI as a chatbot add-on to existing processes, FSCompliance represents fundamental transformation - making it easier to bring the right product safely to consumers by enabling compliance capabilities that were not achievable before.
 
-- **Identify compliance requirements** from regulatory frameworks
-- **Detect compliance gaps** in policies and procedures  
-- **Validate customer scenarios** against regulatory requirements
-- **Generate regulatory reports** for inspections and audits
+### Universal Standards Engine
 
-Initially focused on the [FCA Handbook](https://www.handbook.fca.org.uk/) with architecture designed to support additional regulatory frameworks.
+In principle FSCompliance is designed to rapidly ingest many well-articulated Standards. We are using the word "Standard" widely, to include:
+- **Regulatory frameworks** (FCA Handbook, SEC rules, MiFID II, Basel III)
+- **Industry codes** (conduct codes, best practice guidelines)  
+- **Statutory requirements** (legislation, acts, laws)
+- **International standards** (IFRS, SOX, ISO standards)
+- **Jurisdictional regulations** (state, provincial, national requirements)
 
-**📈 Project Status**: Phase 2 Complete - Core Intelligence & LLM Abstraction Layer implemented with 15 major components including multi-model AI support, cost optimization, and enterprise-grade caching.
+Using the architectures developed for our first ingested Standard, the FCA Handbook, which serves as a proof of concept, we plan to expand to other Standards. Our goal is to develop an AI-enabled universal compliance intelligence that addresses many limitations of traditional RegTech approaches.
+
+### Core Capabilities (Starting with the FCA Handbook as our first ingested Standard)
+
+**Primary Use Cases (Phase 2 Complete):**
+- **Compliance Gap Analysis**: AI agents analyze policies to identify salient requirements and flag compliance gaps
+- **Regulatory Intelligence**: Extract relevant requirements from FCA Handbook for specific analysis
+- **Compliance Assessment**: Comprehensive policy analysis with confidence scoring
+
+**Advanced Use Cases (Phase 3 Implementation):**
+- **Regulatory Change Monitoring**: Track FCA Handbook updates and assess impact
+- **Risk-Based Compliance**: Score compliance risk with prioritization recommendations
+- **Audit Trail Management**: Collect and organize compliance evidence for examinations
+- **Regulatory Relationship Mapping**: Visualize connections between regulations and business activities
+- **Customer Scenario Validation**: Real-time compliance checking (e.g., "For customers aged 60+ holding Bitcoin, did risk warnings meet FCA requirements?")
+
+
+**📈 Project Status**: Phase 2 Complete - Core Intelligence & LLM Abstraction Layer implemented. **Claude 3.5 Sonnet selected as default LLM** based on extensive real-world validation through comprehensive FSCompliance development.
 
 ## 🏗️ Architecture
 
-FSCompliance follows a layered MCP-compliant architecture:
+**FSCompliance follows a layered architecture as the first MCP-integrated compliance platform:**
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
@@ -32,16 +52,22 @@ FSCompliance follows a layered MCP-compliant architecture:
                               ▼                        ▼
                        ┌──────────────┐         ┌─────────────┐
                        │ LLM Gateway  │         │  LightRAG   │
-                       │ (Multi-Model)│         │  Engine     │
+                       │(Claude 3.5)  │         │  Engine     │
                        └──────────────┘         └─────────────┘
 ```
 
 ### Core Layers
 1. **MCP Server Layer**: Protocol-compliant JSON-RPC 2.0 server
-2. **Knowledge Management Layer**: LightRAG-powered regulatory document processing
+2. **Knowledge Management Layer**: LightRAG-powered FCA Handbook processing with advanced RAG capabilities
 3. **Compliance Intelligence Layer**: AI-powered requirement analysis and gap detection
 4. **Memory and Learning Layer**: Long-term memory with privacy controls
-5. **LLM Abstraction Layer**: Multi-model support (LLaMA 3, Falcon, Mistral Medium)
+5. **LLM Abstraction Layer**: Claude 3.5 Sonnet default with multi-model support (LLaMA 3, Falcon, Mistral Medium)
+
+### Strategic Architecture Decisions
+- **LLM Strategy**: Claude 3.5 Sonnet selected as default based on extensive real-world validation (see [LLMChoice.md](LLMChoice.md))
+- **No Fine-Tuning**: Deliberate decision to use standard LLMs + advanced RAG for optimal flexibility and regulatory responsiveness
+- **Database Evolution**: Migrating to Supabase (PostgreSQL + PGVector) for simplified architecture and real-time capabilities
+- **MCP Tool Priority**: 8 priority tools identified for Phase 3 implementation (see [ComplianceTools.md](ComplianceTools.md))
 
 ## 🚀 Quick Start
 
@@ -154,21 +180,26 @@ FSCompliance implements the Model Context Protocol, allowing AI agents to intera
 - **Regulatory Inspectors**: Automated compliance checking and reporting
 - **Professional Advisers**: Regulatory guidance and requirement clarification
 
+> **Important Note**: FSCompliance is a technology platform that provides AI-powered compliance analysis tools. It does not provide legal or regulatory advice. Our expertise lies specifically in the intersection of AI technology and compliance processes, making regulatory intelligence accessible to AI systems. Users remain responsible for compliance decisions and should consult qualified legal and regulatory professionals for definitive guidance.
+
 ## 🔧 Configuration
 
 ### Environment Variables
 
 ```bash
 # LLM Configuration
-FSCOMPLIANCE_DEFAULT_LLM=llama3
-FSCOMPLIANCE_LLM_API_KEY=your_api_key
+FSCOMPLIANCE_DEFAULT_LLM=claude-3.5-sonnet
+FSCOMPLIANCE_CLAUDE_API_KEY=your_anthropic_api_key
+FSCOMPLIANCE_ENABLE_MULTI_MODEL=true
 
-# Database Configuration
-FSCOMPLIANCE_DB_URL=sqlite:///fscompliance.db
+# Database Configuration (Supabase Migration Planned)
+FSCOMPLIANCE_DB_URL=postgresql://user:pass@localhost/fscompliance
+FSCOMPLIANCE_VECTOR_STORE=pgvector
 
 # Privacy Settings
 FSCOMPLIANCE_MEMORY_ENABLED=true
 FSCOMPLIANCE_ANONYMIZE_DATA=true
+FSCOMPLIANCE_AUDIT_LOGGING=true
 
 # MCP Server Settings
 FSCOMPLIANCE_MCP_PORT=8000
@@ -201,10 +232,20 @@ poetry run pytest -m "not integration"
 
 ## 📚 Documentation
 
-- **[Planning.md](Planning.md)**: Complete project architecture and specifications
-- **[Rules.md](Rules.md)**: Development guidelines and coding standards
-- **[Tasks.md](Tasks.md)**: Development roadmap and task tracking
-- **[CLAUDE.md](CLAUDE.md)**: AI assistant guidance for development
+### Strategic & Planning Documents
+- **[Planning.md](Planning.md)**: Complete project architecture, goals, and strategic direction
+- **[Rules.md](Rules.md)**: Development guidelines, coding standards, and project conventions
+- **[Tasks.md](Tasks.md)**: Development roadmap organized by phases with completion tracking
+- **[LLMChoice.md](LLMChoice.md)**: LLM selection strategy and Claude 3.5 Sonnet decision rationale
+- **[ComplianceTools.md](ComplianceTools.md)**: Strategic market analysis and comprehensive MCP tool roadmap
+- **[CLAUDE.md](CLAUDE.md)**: Project context and guidance for AI-assisted development
+
+### Documentation & Brand Materials
+- **[FAQ.md](FAQ.md)**: User-facing project information and comprehensive capability descriptions
+- **[internal/Brand.md](internal/Brand.md)**: Brand positioning, competitive differentiation, and market strategy
+- **[internal/TakeToMarket.md](internal/TakeToMarket.md)**: Go-to-market strategy with "slice through red tape" messaging
+- **[internal/FCAsandbox.md](internal/FCAsandbox.md)**: FCA Sandbox application strategy and regulatory validation timeline
+- **[internal/UserInterface.md](internal/UserInterface.md)**: UI/UX design specifications and presentation prototypes
 
 ### API Documentation
 
@@ -261,7 +302,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 **Architecture & Vision:**
-- **Blake Dempster, Founder & Principal Architect**: Strategic vision, regulatory domain expertise, and technical architecture leadership
+- **Blake Dempster, Founder & Principal Architect**: Strategic vision, expertise in regulatory-AI intersection, and technical architecture leadership
 
 **Core Technologies:**
 - **[Model Context Protocol](https://modelcontextprotocol.io/)**: Standard protocol specification
@@ -278,4 +319,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**FSCompliance** - Making financial regulatory compliance intelligent and accessible.
+## About This Project
+
+**Author**: Blake Dempster, Founder & Principal Architect  
+**Co-Authored by**: Claude Code (claude.ai/code)  
+**Created**: 2024-12-25  
+**Last Updated**: 2024-12-25  
+
+**FSCompliance** - The first MCP-integrated compliance platform for financial services. Slicing through red tape to make it easier to bring the right product safely to consumers.
