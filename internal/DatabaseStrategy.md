@@ -459,8 +459,8 @@ This architectural evolution positions FSCompliance for efficient scaling, enhan
 
 **Author**: Blake Dempster, Founder & Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
-**Created**: 2024-12-25  
-**Last Updated**: 2024-12-25  
+**Created**: 25 December 2024  
+**Last Updated**: 25 December 2024  
 **Purpose**: Comprehensive database architecture evaluation comparing current PostgreSQL + Qdrant approach with Supabase for FSCompliance platform requirements.
 
 *Recommendation: Migrate to Supabase Architecture*

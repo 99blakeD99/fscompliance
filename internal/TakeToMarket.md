@@ -288,8 +288,8 @@ Instead of adding more layers of complexity to an already overwhelming regulator
 
 **Author**: Blake Dempster, Founder & Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
-**Created**: 2024-12-25  
-**Last Updated**: 2024-12-25  
+**Created**: 25 December 2024  
+**Last Updated**: 25 December 2024  
 **Purpose**: Comprehensive go-to-market strategy for FSCompliance MCP platform with "slicing through red tape" positioning and detailed market entry plan.
 
 *This strategy will be refined based on market feedback, pilot program results, and competitive intelligence.*

@@ -30,6 +30,7 @@ This comprehensive planning document reflects deep understanding of how regulato
 - **Target Users**: Compliance Officers, Risk Managers, Regulatory Inspectors, Professional Advisers
 - **Core Technology Stack**: Python, Pydantic, LightRAG, GitHub
 - **Default LLM**: Claude 3.5 Sonnet (with architecture supporting LLaMA 3, Falcon, Mistral Medium, and user-defined models)
+- **LLM Architecture**: FSCompliance MCP server operates independently from enterprise AI agent LLM choices - organizations can use any LLM for their AI agents while benefiting from FSCompliance's proven Claude 3.5 Sonnet compliance intelligence
 - **LLM Strategy**: See LLMChoice.md for comprehensive analysis and strategic rationale
 
 ## Use Cases
@@ -89,8 +90,9 @@ This comprehensive planning document reflects deep understanding of how regulato
 - **Audit Trails**: Compliance decision logging
 
 #### 5. LLM Abstraction Layer
+- **Architectural Independence**: FSCompliance MCP server runs its own LLM completely separately from enterprise AI agent LLM choices, eliminating adoption barriers from corporate LLM standardization decisions
 - **Multi-Model Support**: Claude 3.5 Sonnet (default), LLaMA 3, Falcon, Mistral Medium, user-defined
-- **Quality Optimization**: Claude 3.5 Sonnet default with cost-based alternatives for specific use cases (no fine-tuning per LLMChoice.md architectural decision)
+- **Quality Optimization**: Claude 3.5 Sonnet default with unified model approach (no fine-tuning per LLMChoice.md architectural decision)
 - **LLM Strategy**: Comprehensive analysis and rationale detailed in LLMChoice.md
 - **Minimal Multimodal**: Basic document and text processing
 - **Microsoft Copilot Studio**: Integration pathway
@@ -294,8 +296,8 @@ Based on comprehensive analysis in DatabaseStrategy.md:
 
 **Author**: Blake Dempster, Founder & Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
-**Created**: 2024-12-25  
-**Last Updated**: 2024-12-25  
+**Created**: 25 December 2024  
+**Last Updated**: 25 December 2024  
 **Purpose**: Comprehensive architectural planning and strategic direction for FSCompliance MCP platform development.
 
 *This planning document serves as the foundation for FSCompliance development. It will be updated as the project evolves and requirements are refined.*

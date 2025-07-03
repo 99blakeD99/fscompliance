@@ -86,8 +86,8 @@
 
 **Author**: Blake Dempster, Founder & Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
-**Created**: 2024-12-25  
-**Last Updated**: 2024-12-25  
+**Created**: 25 December 2024  
+**Last Updated**: 25 December 2024  
 **Purpose**: Framework for reviewing Outline of Management Impacts content in relation to FSCompliance strategy.
 
 ---

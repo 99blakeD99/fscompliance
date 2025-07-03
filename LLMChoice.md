@@ -6,6 +6,8 @@ At the start of the FSCompliance project, we set out to remain LLM-agnostic, all
 
 After comprehensive analysis, we have selected **Claude 3.5 Sonnet as the default LLM** for FSCompliance MCP tools, with multi-model support preserving enterprise flexibility. **Claude 3.5 Sonnet has undergone extensive real-world validation through the comprehensive development of FSCompliance itself** - representing hundreds of hours of testing on complex regulatory analysis, multi-document synthesis, strategic planning, and technical architecture tasks that are directly analogous to production requirements.
 
+**Critical Architecture Note**: The FSCompliance MCP server runs its own LLM completely independently from whatever LLM the enterprise chooses for their AI agents. This architectural separation means organizations can use any LLM for their main AI systems while still benefiting from FSCompliance's proven Claude 3.5 Sonnet compliance intelligence via MCP protocol.
+
 This document outlines our decision framework, comparative analysis, and the strategic rationale behind prioritizing proven compliance accuracy while maintaining user choice in financial services applications.
 
 ---
@@ -146,23 +148,37 @@ FSCompliance LLM costs represent a small fraction of total compliance spend whil
 
 This approach recognizes that while Claude 3.5 Sonnet represents the optimal choice for most compliance applications based on comprehensive real-world testing, enterprise environments have diverse requirements. Our architecture accommodates any preference while providing the confidence of a thoroughly proven default.
 
+### Architectural Independence: MCP Server vs AI Agent LLMs
+
+**FSCompliance MCP server operates completely independently from enterprise AI agent LLM choices.** This critical architectural separation eliminates adoption barriers and provides maximum deployment flexibility:
+
+**Enterprise AI Agents** can use:
+- GPT-4, GPT-4o, or other OpenAI models
+- Gemini Pro or other Google models  
+- LLaMA 3, Mistral, or other open-source models
+- Any proprietary or fine-tuned enterprise models
+
+**FSCompliance MCP Server** independently runs:
+- Claude 3.5 Sonnet (default) for proven compliance accuracy
+- Alternative models if configured by the enterprise
+- Completely separate infrastructure and API calls
+
+**Practical Example**: A financial institution using GPT-4 for their customer service AI agents can seamlessly integrate FSCompliance's Claude 3.5 Sonnet-powered compliance intelligence without changing their main AI infrastructure. The MCP protocol handles all communication between the different systems.
+
+**Strategic Advantage**: This separation means corporate LLM standardization decisions cannot block FSCompliance adoption. Enterprises get the best of both worlds - their preferred AI agents plus proven compliance intelligence.
+
 ### Tool-Specific Model Selection
 
-**High-Complexity Tools (Claude 3.5 Sonnet):**
-- `analyze_compliance` - Requires sophisticated regulatory interpretation
-- `detect_gaps` - Needs nuanced risk assessment and prioritization
-- `score_compliance_risk` - Complex multi-factor analysis with confidence intervals
-- `map_regulatory_relationships` - Advanced reasoning about regulatory connections
+**Tool-specific model selection represents a theoretical possibility that we have given consideration to during our architectural design.** However, in order to avoid operational complexity in return for minimal changes in total cost of operation, we have adopted the simplifying assumption that one model will be used throughout the FSCompliance MCP server.
 
-**Medium-Complexity Tools (Configurable):**
-- `monitor_regulatory_changes` - Pattern recognition and impact analysis
-- `validate_customer_scenarios` - Decision logic with regulatory context
-- `suggest_remediation` - Solution generation with compliance considerations
+**Rationale for Unified Model Approach:**
+- **Operational Simplicity**: Single model deployment reduces infrastructure complexity and maintenance overhead
+- **Cost Efficiency**: Tool-specific model selection would provide minimal total cost savings given that LLM costs represent only ~15% of platform costs
+- **Quality Consistency**: Using Claude 3.5 Sonnet across all tools ensures consistent quality and reasoning approaches
+- **Performance Optimization**: Unified model approach enables better caching and optimization strategies
+- **Enterprise Preference**: Simplified deployment aligns with enterprise requirements for straightforward, reliable systems
 
-**Low-Complexity Tools (LLaMA 3):**
-- `extract_requirements` - Information retrieval and categorization
-- `generate_compliance_reports` - Template-based output generation
-- `search_regulations` - Vector search with basic summarization
+This architectural decision can be revisited in future releases if enterprise customers demonstrate clear demand for tool-specific model optimization, but current analysis indicates the complexity-to-benefit ratio does not justify implementation at this time.
 
 ---
 
@@ -384,8 +400,8 @@ This architectural decision aligns with FSCompliance's positioning as the transp
 
 **Author**: Blake Dempster, Founder & Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
-**Created**: 2024-12-25  
-**Last Updated**: 2024-12-25  
+**Created**: 25 December 2024  
+**Last Updated**: 25 December 2024  
 **Purpose**: Strategic analysis and documentation of LLM selection criteria and decision rationale for FSCompliance platform development and enterprise customer communications.
 
 *Next review: Post-Phase 3 implementation and initial customer feedback (Q3 2025)*

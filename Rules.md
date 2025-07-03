@@ -6,6 +6,7 @@ This document establishes development guidelines and conventions for the FSCompl
 
 - **Always read `PLANNING.md`** at the start of a new conversation to understand the project's architecture, goals, style, and constraints.
 - **Check `Tasks.md`** before starting a new task. If the task isn't listed, add it with a brief description and today's date.
+- **When reviewing .md files**, follow the systematic methodology in `internal/ReviewRules.md` with internal/Touchstones.md consistency checks.
 - **Use consistent naming conventions, file structure, and architecture patterns** as described in `PLANNING.md`.
 - **Maintain MCP protocol compliance** - ensure all server implementations follow MCP specification requirements.
 
@@ -15,6 +16,7 @@ This document establishes development guidelines and conventions for the FSCompl
 - **Organize code into clearly separated modules**, grouped by feature or responsibility.
 - **Use clear, consistent imports** (prefer relative imports within packages).
 - **Follow the layered architecture** defined in Planning.md (MCP Server, Knowledge Management, Compliance Intelligence, Memory/Learning, LLM Abstraction).
+- **Maintain LLM architectural independence** - FSCompliance MCP server operates independently from enterprise AI agent LLM choices per LLMChoice.md strategy.
 
 ## 🧪 Testing & Reliability
 
@@ -104,8 +106,8 @@ This document establishes development guidelines and conventions for the FSCompl
 
 **Author**: Blake Dempster, Founder & Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
-**Created**: 2024-12-25  
-**Last Updated**: 2024-12-25  
+**Created**: 25 December 2024  
+**Last Updated**: 25 December 2024  
 **Purpose**: Development standards and conventions for FSCompliance project ensuring consistency, quality, and regulatory compliance across all code contributions.
 
 *These rules ensure FSCompliance maintains high standards for code quality, security, and regulatory compliance throughout development.*

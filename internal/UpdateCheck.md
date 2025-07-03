@@ -112,8 +112,8 @@ FSCompliance provides compliance professionals with current regulatory intellige
 
 **Author**: Blake Dempster, Founder & Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
-**Created**: 2024-12-25  
-**Last Updated**: 2024-12-25  
+**Created**: 25 December 2024  
+**Last Updated**: 25 December 2024  
 **Purpose**: Framework for maintaining currency of Standards and reference documents adopted by FSCompliance.
 
 ---
