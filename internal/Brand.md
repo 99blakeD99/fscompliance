@@ -10,13 +10,14 @@
 
 **Focus** - Financial Institutions and financial services companies  
 **B2B** - Business-to-business solutions for enterprise clients  
-**Professional** - Enterprise-grade solutions for critical compliance workflows  
+**Professional** - Enterprise-grade solutions for critical compliance workflows with expert review required for all AI recommendations  
 **Trustworthy** - Transparent, reliable, and dependable for financial services  
 **Intelligent** - Built on deep understanding of how regulatory principles align with AI capabilities  
-**Innovative** - First-to-market MCP compliance platform  
+**Innovative** - First-to-market MCP compliance platform slicing through regulatory red tape  
 **Global** - Worldwide potential with remote-first approach  
 **Open** - Open-source transparency and community-driven development  
 **Accessible** - AI-agent native design for universal AI platform integration  
+**Consumer-Focused** - Ultimately serving the goal of making it easier to bring the right financial products safely to consumers  
 
 ---
 
@@ -24,7 +25,7 @@
 
 ### Primary Positioning Statement
 
-*"FSCompliance is the open-source compliance intelligence platform built exclusively for financial services. We make regulatory intelligence accessible to any AI agent through innovative MCP integration while increasing the effectiveness of compliance professionals, delivering professional-grade compliance analysis with global relevance and transparent trustworthiness."*
+*"FSCompliance is the open-source universal compliance intelligence platform built exclusively for financial services. We slice through regulatory red tape by making compliance intelligence accessible to any AI agent through innovative MCP integration, ultimately serving the goal of making it easier to bring the right financial products safely to consumers. FSCompliance rapidly ingests any well-articulated Standard - regulatory frameworks, industry codes, statutory requirements, international standards, and jurisdictional regulations - while increasing the effectiveness of compliance professionals through professional-grade analysis with global relevance and transparent trustworthiness."*
 
 ### Market Positioning
 
@@ -180,8 +181,9 @@
 ### Website & Digital
 
 **Homepage Messaging:**
-- Hero: "AI-Native Compliance Intelligence for Financial Services"
-- Subhead: "The first MCP platform that makes regulatory expertise accessible to any AI agent"
+- Hero: "Slice Through Red Tape"
+- Subhead: "Making it easier to bring the right financial products safely to consumers through AI-native compliance intelligence"
+- Description: "The first MCP platform that makes regulatory expertise accessible to any AI agent"
 - CTA: "Explore Compliance Tools" / "Request Demo"
 
 **Navigation & Structure:**
@@ -193,6 +195,8 @@
 ### Marketing Materials
 
 **Taglines:**
+- "Slice Through Red Tape"
+- "Making it easier to bring the right product safely to consumers"
 - "Compliance Intelligence. AI Native."
 - "The AI Compliance Platform Financial Services Trust"
 - "Open Source. Intelligent. Enterprise Ready."
@@ -303,9 +307,9 @@
 **Author**: Blake Dempster, Founder & Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
 **Created**: 25 December 2024  
-**Last Updated**: 25 December 2024  
+**Last Updated**: 3 July 2025  
 **Purpose**: Comprehensive brand positioning and values framework for FSCompliance, including market positioning, competitive differentiation, and visual identity guidelines.
 
-*Next review: Post-Phase 3 completion (Q3 2025)*
+*This brand framework integrates FSCompliance's mission to slice through regulatory red tape and make it easier to bring the right financial products safely to consumers through the first MCP-integrated compliance platform for financial services.*
 
 ---

@@ -2,6 +2,8 @@
 
 This document establishes a systematic methodology for reviewing .md files to ensure consistency, quality, and strategic alignment across FSCompliance project documentation.
 
+**Important**: If reviewing content related to "Outline of Management Impacts" emailshots, use internal/MgmtImpactRules.md methodology instead of this ReviewRules.md process. MgmtImpactRules.md provides specialized guidance for the distinct audience, style, and objectives of Management Impacts communications.
+
 ## Review Sequence
 
 When reviewing any .md file, follow this systematic approach:
@@ -15,6 +17,9 @@ When reviewing any .md file, follow this systematic approach:
 - **Check against Touchstones.md** - Unless reviewing Touchstones.md itself, verify no inconsistencies with established project touchstones
 - **Resolve inconsistencies** - If conflicts exist, resolve them or seek direction
 - **Identify new touchstones** - If you identify potential new touchstones, raise them and seek direction on whether to add them
+- **Explicit touchstone assessment** - Always conclude this step with either:
+  - "No new touchstones proposed" (if document aligns with existing touchstones)
+  - "New touchstone proposed: [description]" (if new fundamental principle identified)
 
 ### 3. Inter-Document Consistency
 - **Use Touchstones method** - Don't try to check against every other .md file individually
@@ -28,6 +33,12 @@ Determine if changes require updates to CLAUDE.md implementation guidance:
 - **User-facing elements** - Does this affect UI copy, messaging, or user workflows that need implementation?
 - **If yes to any**, update CLAUDE.md with specific implementation guidance linking strategic decisions to code requirements
 
+### 4.1. JBMD Website Update Reminder
+**Special consideration for FAQ.md and UserInterface.md:**
+- If reviewing FAQ.md, add reminder to update JBMDwebsite/fscompliance.html with finalized FAQ content
+- If reviewing UserInterface.md, add reminder to update JBMD website with any new interface demonstrations or design changes
+- Maintain sync between FSCompliance documentation and JBMD website presentation materials
+
 ### 5. Multi-Perspective Review
 Read the .md being reviewed in complete sweeps from each relevant stakeholder viewpoint:
 
@@ -37,11 +48,6 @@ Read the .md being reviewed in complete sweeps from each relevant stakeholder vi
 3. **Chief Technology Officer (CTO)** - Strategic technology architecture and innovation
 4. **Chief Information Security Officer (CISO)** - Data security, privacy, and risk management
 5. **Chief Risk Officer (CRO)** - Enterprise risk management and regulatory risk
-6. **IT Director** - Technical implementation and operational requirements
-7. **Purchasing Director** - Procurement considerations and vendor evaluation
-8. **Head of AI** - AI strategy integration and technical capabilities
-9. **Operational Director** - Day-to-day operational impact and workflow integration
-10. **Regulatory Affairs Director** - Regulator interface and compliance strategy
 
 **Note:** Some documents may not be relevant to all perspectives - simply note this and move on to applicable viewpoints.
 

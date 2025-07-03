@@ -1,6 +1,6 @@
 # FSCompliance User Interface Design
 
-*UI/UX design strategy for FSCompliance - the AI-native compliance intelligence platform that makes regulatory intelligence accessible to any AI agent and increases the effectiveness of Compliance professionals in Financial Services*
+*UI/UX design strategy for FSCompliance - the AI-native compliance intelligence platform that makes regulatory intelligence accessible to any AI agent and increases the effectiveness of Compliance professionals in Financial Services, ultimately serving the goal of making it easier to bring the right financial products safely to consumers*
 
 ---
 
@@ -18,6 +18,7 @@
 - Clear separation between automated analysis and human oversight requirements
 - Transparent AI decision-making with explainable results
 - First MCP-integrated compliance platform design that bridges AI agents and compliance professionals
+- FSCompliance MCP server operates independently from enterprise AI agent LLM choices, enabling flexible deployment across any corporate LLM environment
 
 **Compliance-First Workflow**
 - Compliance workflows take priority over generic business processes
@@ -257,6 +258,8 @@ FSCompliance Dashboard
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │ AI Agent Integration                         [🤖 MCP Status: ✅]│
+│ Your AI agents use FSCompliance compliance intelligence        │
+│ regardless of your enterprise LLM choice (Claude, GPT, etc.)   │
 │                                                                 │
 │ Available MCP Tools:                                            │
 │ ┌─────────────────────────────────────────────────────────────┐ │
@@ -531,9 +534,9 @@ FSCompliance Dashboard
 **Author**: Blake Dempster, Founder & Principal Architect  
 **Co-Authored by**: Claude Code (claude.ai/code)  
 **Created**: 25 December 2024  
-**Last Updated**: 25 December 2024  
+**Last Updated**: 3 July 2025  
 **Purpose**: Comprehensive UI/UX design document and mockup collection for FSCompliance demo version, including user personas, workflows, and interface specifications.
 
-*Version: 1.0*
+*This document provides detailed UI/UX specifications for the first MCP-integrated compliance platform, designed to serve both AI agents and compliance professionals in making it easier to bring the right financial products safely to consumers.*
 
 ---

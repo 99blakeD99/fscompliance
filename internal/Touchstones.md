@@ -33,6 +33,7 @@ When adding new touchstones, ensure they:
 - Using the MCP will enable compliance professionals to carry out senior executive tasks rather than get entangled in small-print
 - Human effectiveness is transformationally enhanced
 - Humans still have final responsibility, the MCP's role is to make that responsibility manageable
+- All FSCompliance capabilities ultimately serve the goal of making it easier to bring the right financial products safely to consumers - transforming regulatory burden from a barrier to innovation into intelligence that enables better consumer outcomes
 
 ### Technical Architecture
 - The MCP internally allows use of any LLM within the MCP
@@ -41,6 +42,7 @@ When adding new touchstones, ensure they:
 - The MCP is open-source and transparent for trust and auditability
 - Architecture is self-hostable for maximum enterprise data control
 - Complications of fine-tuning are bypassed through use of standard models and advanced RAG
+- FSCompliance MCP server operates completely independently from whatever LLM the enterprise chooses for their AI agents - eliminating adoption barriers from corporate LLM standardization decisions while maintaining proven compliance intelligence through Claude 3.5 Sonnet default
 
 ### Product Strategy
 - Model Context Protocol (MCP) integration makes the platform AI-agent native
@@ -53,6 +55,7 @@ When adding new touchstones, ensure they:
 - The MCP refers to the product that enterprises deploy and use
 - Documentation maintains professional tone suited to corporate financial services audience
 - All strategic decisions are documented with clear rationale and cross-references
+- FSCompliance provides compliance intelligence to support professional decision-making, never to replace it - users retain complete responsibility for all compliance decisions with expert review required for all AI recommendations
 
 ---
 
